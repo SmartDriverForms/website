@@ -1,13 +1,13 @@
 :root {
-    --bg: #111827;
-    --bg-alt: #172033;
-    --surface: #1f2937;
-    --border: #374151;
-    --text: #f3f4f6;
-    --muted: #cbd5e1;
-    --blue: #60a5fa;
-    --blue-strong: #2563eb;
-    --blue-light: #93c5fd;
+    --bg: #120b1f;
+    --bg-alt: #211236;
+    --surface: #291940;
+    --border: #4d3a64;
+    --text: #f7f5fb;
+    --muted: #d5cce0;
+    --blue: #9be34f;
+    --blue-strong: #72c62b;
+    --blue-light: #b9f06f;
 }
 
 * {
@@ -43,7 +43,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgba(17, 24, 39, 0.96);
+    background: rgba(18, 11, 31, 0.96);
     border-bottom: 1px solid var(--border);
 }
 
@@ -78,8 +78,20 @@ a:hover {
     color: #fff;
 }
 
+.brand-banner {
+    padding: 32px 0 12px;
+}
+
+.brand-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
 .hero {
-    padding: 90px 0 70px;
+    padding: 56px 0 70px;
 }
 
 .eyebrow {
