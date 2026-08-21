@@ -256,3 +256,14 @@ h3 {
         flex-direction: column;
     }
 }
+
+.portal-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.disabled-link {
+    color: var(--muted);
+}
