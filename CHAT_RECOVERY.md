@@ -724,6 +724,21 @@ Step 14C is live on Cloudflare.
 
 The corrected tall-phone fallback media condition is present in both the live homepage source and live CSS.
 
+## Website Modernization Step 14D — Direct Phone Detection / Full Cache Bust — VERIFIED
+
+The media-query approach was abandoned after Randall's phone continued to show the wrong hero.
+
+Step 14D:
+
+- detects phones directly in JavaScript;
+- forces a `phone-layout` class;
+- forces mobile-v3 hero source on phones;
+- version-busts homepage CSS and JavaScript;
+- uses a new mobile image filename;
+- leaves tablets/desktops unchanged.
+
+Verified against a normal phone, a simulated 900 px-wide Android phone, and an 820 px tablet.
+
 ## Exact Next Action
 
-STOP for Randall's live phone review. Next Development Note remains `v0.002`.
+Publish and verify Step 14D live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.

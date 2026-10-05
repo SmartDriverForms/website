@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Driver Forms</title>
     <meta name="description" content="Digital forms and workflow tools built for professional drivers.">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=20261005-14d">
+    <script src="script.js?v=20261005-14d" defer></script>
 </head>
 
 <body>
@@ -38,14 +38,10 @@
 <main>
     <section class="home-hero">
         <picture class="home-hero-picture">
-            <source
-                media="(max-width: 760px), (max-width: 980px) and (max-aspect-ratio: 3/5)"
-                srcset="assets/smart-driver-forms-hero-mobile-v2.webp"
-                width="760"
-                height="360"
-            >
             <img
+                id="home-hero-image"
                 src="assets/smart-driver-forms-hero.webp"
+                data-mobile-src="assets/smart-driver-forms-hero-mobile-v3.webp"
                 width="1600"
                 height="640"
                 alt="Purple semi-truck driving at sunset on a mountain highway"

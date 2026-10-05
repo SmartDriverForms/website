@@ -1405,8 +1405,49 @@ Verified live:
   `@media (max-width: 760px), (max-width: 980px) and (max-aspect-ratio: 3/5)`;
 - production verification passed on Cloudflare check attempt 2.
 
+## Website Modernization Step 14D — Direct Phone Detection / Full Cache Bust — VERIFIED 2026-10-05
+
+Randall reported no visible difference after the Step 14C media-query fix.
+
+Decision:
+
+- stop relying on responsive media queries to identify this phone;
+- use direct device detection instead;
+- cache-bust all homepage resources involved in the hero so the phone cannot reuse stale CSS, JavaScript, or image bytes.
+
+Step 14D changes:
+
+- removed the mobile `<source media>` selection from the homepage hero;
+- homepage now has one hero `<img>` with:
+  - desktop default source;
+  - `data-mobile-src="assets/smart-driver-forms-hero-mobile-v3.webp"`;
+- added direct phone detection in `script.js` using:
+  - mobile user-agent detection;
+  - fallback to actual short screen side ≤ 600;
+- detected phones receive an explicit `phone-layout` class and forced mobile image source;
+- CSS phone hero rules now use `.phone-layout` instead of a media query;
+- created new cache-busting mobile filename:
+  `assets/smart-driver-forms-hero-mobile-v3.webp`;
+- homepage stylesheet reference is versioned:
+  `style.css?v=20261005-14d`;
+- homepage JavaScript reference is versioned:
+  `script.js?v=20261005-14d`;
+- tablet and desktop behavior remains unchanged.
+
+Verification:
+
+- 390×900 phone: PASSED;
+- simulated Android/mobile user agent with 900×1800 layout: PASSED — explicit phone class and short hero active;
+- 820×1180 tablet: PASSED — tablet layout retained;
+- mobile image remains 34,408 bytes;
+- no homepage wording or CTA text changed.
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14d_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live phone review.
+Publish Step 14D to GitHub/Cloudflare, verify the live homepage references the versioned CSS/JS and mobile-v3 image, then STOP for Randall's phone review.
 
 The next Development Note remains `v0.002`.
