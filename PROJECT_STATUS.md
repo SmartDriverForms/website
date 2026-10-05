@@ -1706,8 +1706,33 @@ Verification:
 - all 11 pages retain the identical six-link primary navigation in the approved order: PASSED;
 - all 11 pages reference the Step 17 JavaScript version: PASSED.
 
+Step 17 production verification:
+
+- commit `0114ea6 Refine responsive navigation behavior` pushed to `origin/main`;
+- Cloudflare deployment verified live on attempt 5;
+- live homepage references `script.js?v=20261005-17`;
+- live JavaScript contains both the ☰/✕ state change and Escape-key close behavior;
+- repository and `origin/main` synchronized at verification;
+- Randall reviewed the live navigation behavior and explicitly approved Step 17 on 2026-10-05.
+
+## Website Modernization Step 18 — Products Accuracy Recheck — VERIFIED 2026-10-05
+
+Randall approved proceeding to a Products-page review.
+
+The current Products page was compared with the already approved Step 4 product-availability decision and the current website recovery record.
+
+Result:
+
+- no redesign or product-content change is warranted;
+- Smart Driver Trip Sheet and Smart Mileage Recap remain the only items marketed as Available Now;
+- Smart Trip Data, Smart Parking, Smart FMCSA Guide, Smart GeoTab, and Smart Truck Restrictions & Low Bridges remain clearly separated under In Development;
+- Smart Logs & HOS remains intentionally absent while that module is being reworked;
+- future/secondary products are not represented as available in the public Google Play release;
+- the existing Google Play CTA and development disclaimer remain appropriate;
+- Step 18 therefore closes as a verified no-change review rather than unnecessary rework.
+
 ## Exact Next Action
 
-Publish Step 17 and verify the versioned JavaScript is live. Then Randall can review the Menu open/close behavior on his phone.
+Step 19: review the For Drivers page for clarity, usefulness, and consistency with the approved Products page and current public app.
 
 The next Development Note remains `v0.002`.
