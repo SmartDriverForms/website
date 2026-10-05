@@ -644,10 +644,60 @@ Verified live:
 - old `Coming Soon` placeholder wording absent;
 - production verification passed on Cloudflare check attempt 2.
 
+## Website Modernization Step 6 — For Fleets Page — VERIFIED 2026-10-05
+
+Randall approved rebuilding the For Fleets page.
+
+Scope was limited to `fleets.html`. No shared CSS changes were required and the other 10 HTML pages were not changed.
+
+For Fleets page changes:
+
+- replaced the old `Coming Soon` cards with a clear future-facing page;
+- headline now states: `Fleet tools are planned, but not available yet`;
+- explicitly states the current public product is the driver app;
+- explicitly states fleet access, company management, and fleet reporting are not open for customer use yet;
+- explains the planned Fleet Portal direction through:
+  - Driver Records;
+  - Trip Sheets;
+  - Documents;
+  - Reports;
+  - Company Organization;
+- explains the driver-first architecture: driver data first, fleet tools second;
+- explicitly states:
+  - no fleet login yet;
+  - no published fleet pricing yet;
+  - no release date promised;
+- links fleets to current Products instead of presenting a nonfunctional login or signup path;
+- no fleet pricing, signup, trial, or release-date claims were added.
+
+File changed:
+
+- `fleets.html`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 6 product change limited to `fleets.html`: PASSED;
+- other 10 HTML pages unchanged: PASSED;
+- planned-vs-current fleet wording: PASSED;
+- no `Coming Soon`, Fleet Portal sign-in, trial, or purchase wording: PASSED;
+- local fleet-page links resolve: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step6_fleets_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step6_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 5 review before starting Step 6.
+Publish Step 6 to GitHub/Cloudflare, verify the live For Fleets page, then STOP for Randall's review before Step 7.
 
-Do not change Fleets, Support, About, or other page bodies until the next step is approved.
+Do not change Support, About, or other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.

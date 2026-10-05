@@ -361,6 +361,28 @@ Verified public For Drivers page:
 - real Google Play CTA;
 - no `Coming Soon` placeholder messaging.
 
+## Website Modernization Step 6 — For Fleets Page — VERIFIED
+
+Step 6 rebuilt only For Fleets.
+
+The page now makes the fleet status explicit:
+
+- fleet tools are planned but not available yet;
+- the current public product is the driver app;
+- planned Fleet Portal directions include Driver Records, Trip Sheets, Documents, Reports, and Company Organization;
+- no fleet login yet;
+- no published fleet pricing yet;
+- no release date promised;
+- fleets are directed to current Products instead of a nonfunctional login/signup path.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step6_fleets_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step6_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 5 review before Step 6. Next Development Note remains `v0.002`.
+Publish and verify Step 6 live, then STOP for Randall's review before Step 7. Next Development Note remains `v0.002`.
