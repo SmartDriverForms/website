@@ -592,6 +592,18 @@ Verified direct-access pages:
 - Fleet Portal accurately says customer access is planned and not open;
 - no stale `Coming Soon` wording remains on those pages.
 
+## Website Modernization Step 12 — Clean Internal URLs — VERIFIED
+
+Step 12 changed only internal link destinations across all 11 HTML pages.
+
+Internal links now use the Cloudflare clean URL scheme such as `/products`, `/drivers`, and `/privacy` instead of `products.html`, `drivers.html`, and `privacy.html`.
+
+No wording, layout, CSS, JavaScript, Admin link, Google Play link, or support-email target changed.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step12_clean_links_validation_20261005.txt`
+
 ## Exact Next Action
 
-STOP for Randall's Step 11 review before Step 12. Next Development Note remains `v0.002`.
+Publish and verify Step 12 live, then STOP for Randall's review before Step 13. Next Development Note remains `v0.002`.

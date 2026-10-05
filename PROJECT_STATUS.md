@@ -1098,10 +1098,51 @@ Verified live:
 - stale `Coming Soon` wording absent from all three;
 - production verification passed on Cloudflare check attempt 3.
 
+## Website Modernization Step 12 — Clean Internal URLs — VERIFIED 2026-10-05
+
+Randall approved replacing internal `*.html` navigation links with the live Cloudflare clean-URL scheme.
+
+Scope:
+
+- all 11 HTML files were updated only where an approved internal `href` changed;
+- no wording, page layout, CSS, JavaScript, or external link target changed.
+
+Clean internal destinations now used:
+
+- Home → `/`;
+- Products → `/products`;
+- For Drivers → `/drivers`;
+- For Fleets → `/fleets`;
+- Support → `/support`;
+- About → `/about`;
+- Privacy Policy → `/privacy`;
+- Delete Account → `/delete-account`;
+- any direct references to Pricing / Sign In / Fleet Portal use `/pricing`, `/signin`, and `/fleet-portal`.
+
+External links preserved exactly:
+
+- Admin Portal;
+- Google Play;
+- support email.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- all 11 HTML files changed only by approved internal `href` replacements: PASSED;
+- no old internal `*.html` href remains: PASSED;
+- internal clean-URL set valid: PASSED;
+- Admin link occurrence count unchanged: PASSED;
+- Google Play link occurrence count unchanged: PASSED;
+- support-email link occurrence count unchanged: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step12_clean_links_validation_20261005.txt`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 11 review before starting Step 12.
+Publish Step 12 to GitHub/Cloudflare, verify the live pages contain clean internal links and every clean destination responds successfully, then STOP for Randall's review before Step 13.
 
-Do not change other page bodies until the next step is approved.
+Do not begin homepage banner/image modernization until Step 13 is approved.
 
 The next Development Note remains `v0.002`.
