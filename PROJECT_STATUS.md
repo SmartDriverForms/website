@@ -289,18 +289,67 @@ Validation:
 - paused Smart Logs & HOS is explicitly excluded from marketing;
 - `git diff --check`: PASSED.
 
+## Website Modernization Step 1 — Header / Footer / Responsive Menu — VERIFIED 2026-10-05
+
+Approved Step 1 scope was limited to the shared website frame. No page-body product/content rewrite was authorized or performed.
+
+Changed:
+
+- standardized one shared header/navigation structure across all 11 HTML pages;
+- standardized one shared footer structure across all 11 HTML pages;
+- added current-page highlighting for pages represented in the primary navigation;
+- added a compact `Menu` button for phone/tablet widths;
+- moved the eight-link navigation into a collapsible phone/tablet menu at 980 px and below;
+- kept the existing desktop navigation choices unchanged;
+- added visible keyboard-focus styling for links/buttons;
+- loaded the shared `script.js` on all 11 pages;
+- replaced the placeholder console-log JavaScript with the responsive menu behavior;
+- made short-page footers stay at the bottom of the viewport.
+
+Files changed:
+
+- `index.html`
+- `products.html`
+- `drivers.html`
+- `fleets.html`
+- `pricing.html`
+- `support.html`
+- `about.html`
+- `signin.html`
+- `fleet-portal.html`
+- `privacy.html`
+- `delete-account.html`
+- `style.css`
+- `script.js`
+
+Verification:
+
+- `git diff --check`: PASSED;
+- `node --check script.js`: PASSED;
+- all 11 pages contain exactly one standardized header, footer, menu button, and `script.js` include: PASSED;
+- primary navigation is identical across all 11 pages: PASSED;
+- current-page markers: PASSED;
+- all local links/targets: PASSED;
+- every page's `<main>` content is byte-for-byte unchanged from pre-Step-1 HEAD: PASSED;
+- desktop visual render: PASSED;
+- 820 px tablet visual render: PASSED;
+- 390 px phone collapsed-menu visual render: PASSED;
+- 390 px expanded-menu visual render: PASSED;
+- actual JavaScript menu-button click/expand behavior: PASSED;
+- short-page bottom footer behavior: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step1_header_footer_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step1_screenshots_20261005/`
+
 ## Exact Next Action
 
-Use `WEBSITE_FEATURE_AVAILABILITY_MATRIX.md` as the source of truth for the first website modernization pass.
+STOP after Step 1 and obtain Randall's review/approval before starting Step 2.
 
-Recommended first implementation scope:
-
-1. standardize the shared header/footer across all pages;
-2. replace the current phone/tablet navigation with a compact responsive menu;
-3. rewrite Home and Products around the verified current public release;
-4. add a Get the App / Google Play CTA only after the exact production listing URL is verified;
-5. remove or reframe stale Smart Parking “Coming Soon” wording;
-6. keep Smart Logs & HOS off the public site while paused;
-7. decide whether an optional clearly labeled `In Development` section belongs on the public site.
+No Home, Products, pricing, product-status, or other page-body content changes should be made until Randall approves the Step 1 website frame.
 
 The next Development Note remains `v0.002`.

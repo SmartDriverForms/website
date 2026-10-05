@@ -158,6 +158,31 @@ Only Smart Driver Trip Sheet and Smart Mileage Recap are verified active public 
 
 Development-only modules must not be promoted to Available Now merely because they are integrated locally. Smart Logs & HOS is explicitly paused and must not be marketed.
 
+## Website Modernization Step 1 — VERIFIED COMPLETE
+
+Step 1 standardized the header/footer on all 11 pages and replaced the oversized phone/tablet navigation with a compact Menu button.
+
+No `<main>` page content changed.
+
+Validation passed:
+
+- Git diff check;
+- JavaScript syntax;
+- identical shared navigation structure on all pages;
+- local links;
+- byte-for-byte preservation of all page-body `<main>` content;
+- desktop/tablet/phone visual review;
+- real JavaScript menu-button expand behavior;
+- bottom footer behavior on short pages.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step1_header_footer_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step1_screenshots_20261005/`
+
 ## Exact Next Action
 
-Use the matrix to begin the first website modernization pass: shared header/footer, scalable mobile/tablet navigation, and Home/Products content aligned to the current public release. Verify the exact Google Play listing URL before adding a Get the App CTA. Preserve Development Note continuity; next note is `v0.002`.
+STOP and obtain Randall's Step 1 approval before any Step 2 work. Do not rewrite Home, Products, Pricing, or other page-body content until approved. Next Development Note remains `v0.002`.
