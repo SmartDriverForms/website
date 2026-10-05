@@ -751,6 +751,17 @@ Verified live:
 - explicit JavaScript phone detection;
 - explicit `phone-layout` CSS rules.
 
+## Website Modernization Step 14E — Final Phone Hero Sizing — VERIFIED
+
+Final phone-only refinement:
+
+- 120 px phone hero image;
+- smaller phone headline;
+- tighter phone spacing;
+- smaller phone supporting text;
+- tablet/desktop unchanged;
+- homepage CSS cache version bumped to `14e`.
+
 ## Exact Next Action
 
-STOP for Randall's live phone review. Next Development Note remains `v0.002`.
+Publish and verify Step 14E live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.

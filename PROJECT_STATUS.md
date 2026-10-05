@@ -1463,8 +1463,36 @@ Verified live:
 - live CSS contains the explicit `.phone-layout .home-hero-picture` rules;
 - production verification passed on Cloudflare check attempt 4.
 
+## Website Modernization Step 14E — Final Phone Hero Sizing — VERIFIED 2026-10-05
+
+Randall approved one final phone-only refinement after Step 14D finally loaded the correct phone layout.
+
+Step 14E changes only phone presentation:
+
+- phone hero image height reduced from 180 px to 120 px;
+- phone hero copy top/bottom spacing tightened;
+- phone headline reduced to 2.35rem with tighter line height;
+- phone eyebrow reduced slightly;
+- phone green tagline reduced to 1.15rem;
+- phone body copy reduced to 1rem;
+- phone CTA spacing tightened;
+- tablet and desktop layouts remain unchanged;
+- homepage CSS reference bumped to `style.css?v=20261005-14e` so phones cannot reuse the prior Step 14D CSS.
+
+Verification:
+
+- 390×900 phone render: PASSED;
+- simulated wide Android phone render: PASSED;
+- 820×1180 tablet render: PASSED / unchanged;
+- Google Play button appears materially sooner in the phone first view;
+- no homepage wording or CTA labels changed.
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14e_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live phone review.
+Publish Step 14E to GitHub/Cloudflare, verify the live homepage references `style.css?v=20261005-14e` and serves the new phone sizing, then STOP for Randall's phone review.
 
 The next Development Note remains `v0.002`.
