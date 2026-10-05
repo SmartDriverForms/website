@@ -158,6 +158,54 @@ h1 {
     font-size: 1.1rem;
 }
 
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 11px 18px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.button-primary {
+    background: var(--blue-strong);
+    color: #120b1f;
+}
+
+.button-primary:hover {
+    background: var(--blue-light);
+    color: #120b1f;
+}
+
+.button-secondary {
+    border-color: var(--border);
+    background: var(--surface);
+    color: #fff;
+}
+
+.button-secondary:hover {
+    border-color: var(--blue);
+    color: #fff;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .section {
     padding: 64px 0;
 }
@@ -181,6 +229,38 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 820px;
+}
+
+.split-section,
+.support-callout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+    gap: 36px;
+    align-items: center;
+}
+
+.split-section p,
+.next-tools p,
+.support-callout p {
+    max-width: 720px;
+    color: var(--muted);
+}
+
+.driver-types {
+    justify-content: flex-start;
+}
+
+.next-tools {
+    max-width: 850px;
+}
+
+.support-callout .button {
+    justify-self: end;
 }
 
 .card {
@@ -321,6 +401,16 @@ h3 {
 
     .card-grid {
         grid-template-columns: 1fr;
+    }
+
+    .split-section,
+    .support-callout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .support-callout .button {
+        justify-self: start;
     }
 
     .footer-wrap {

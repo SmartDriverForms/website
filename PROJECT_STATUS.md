@@ -433,10 +433,62 @@ Verified live on the homepage:
 - footer Admin link points to `https://admin.smartdriverforms.com`;
 - production verification passed on Cloudflare check attempt 3.
 
+## Website Modernization Step 3 — Home Page — VERIFIED 2026-10-05
+
+Randall approved proceeding to Step 3.
+
+Scope was limited to the Home page plus shared CSS required for the new Home layout. No other page body was changed.
+
+Home page changes:
+
+- replaced the old generic hero copy with a clearer driver-focused message: `Less paperwork. More time behind the wheel.`;
+- added a verified `Get the App on Google Play` button;
+- verified Google Play listing:
+  `https://play.google.com/store/apps/details?id=com.smartdriverforms.tripsheet`;
+- added a `See Current Features` link to Products;
+- replaced stale Home product cards with the two verified public-release modules:
+  - Smart Driver Trip Sheet;
+  - Smart Mileage Recap;
+- removed Smart Parking from Home because it is not in the current public release;
+- added a driver-focused section for Company Drivers / Lease Purchase Drivers / Owner Operators;
+- added a generic platform-growth section without promising specific unreleased modules or release dates;
+- added a direct Support callout.
+
+Files changed:
+
+- `index.html`;
+- `style.css`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- `node --check script.js`: PASSED;
+- product changes limited to `index.html` and `style.css`: PASSED;
+- the other 10 HTML pages are byte-for-byte unchanged: PASSED;
+- Home public-product claims match the feature availability matrix: PASSED;
+- Smart Parking absent from Home marketing: PASSED;
+- Smart Logs & HOS absent from Home marketing: PASSED;
+- Google Play endpoint: HTTP 200;
+- Google Play page resolves as Smart Driver Forms: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED;
+- full-height desktop and phone content review: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step3_homepage_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step3_screenshots_20261005/`
+
+Note: the existing large homepage banner is intentionally preserved in Step 3. Artwork/image modernization remains a separate later step.
+
 ## Exact Next Action
 
-STOP for Randall's live Step 2 review before starting Step 3.
+Publish Step 3 to GitHub/Cloudflare, verify the live Home page and Google Play CTA, then STOP for Randall's review before Step 4.
 
-Do not rewrite Home, Products, or other page-body content until the next step is approved.
+Do not change Products or other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.

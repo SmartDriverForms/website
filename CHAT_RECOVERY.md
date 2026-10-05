@@ -244,6 +244,31 @@ Verified footer:
 - About
 - Admin → `https://admin.smartdriverforms.com`
 
+## Website Modernization Step 3 — Home Page — VERIFIED
+
+Step 3 rebuilt only the Home page and supporting CSS.
+
+Verified current public features shown on Home:
+
+- Smart Driver Trip Sheet;
+- Smart Mileage Recap.
+
+Verified Google Play CTA:
+
+`https://play.google.com/store/apps/details?id=com.smartdriverforms.tripsheet`
+
+No Smart Parking or Smart Logs & HOS marketing appears on Home.
+
+Other 10 HTML page bodies remain unchanged.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step3_homepage_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step3_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 2 review before Step 3. Next Development Note remains `v0.002`.
+Publish and verify Step 3 live, then STOP for Randall's review before Step 4. Next Development Note remains `v0.002`.
