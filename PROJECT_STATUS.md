@@ -1615,8 +1615,23 @@ Verified live:
 - production verification passed on Cloudflare check attempt 6;
 - local `main` and `origin/main` match.
 
+## Step 15 Real-Phone Review — APPROVED 2026-10-05
+
+Randall reviewed the live compact phone homepage on his real Android device and approved the result.
+
+Accepted phone presentation includes:
+
+- compact header and Menu control;
+- 96 px hero image;
+- 1.8rem hero headline;
+- compact supporting copy and CTA controls;
+- tighter phone spacing;
+- tablet and desktop layouts preserved.
+
+Step 15 is closed and becomes the approved mobile homepage baseline.
+
 ## Exact Next Action
 
-STOP for Randall's real-phone review of the compact layout.
+Proceed to the next website modernization step from the approved Step 15 baseline.
 
 The next Development Note remains `v0.002`.
