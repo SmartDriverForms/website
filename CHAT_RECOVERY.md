@@ -612,6 +612,27 @@ All 11 clean public URLs return HTTP 200, and no live page contains an old inter
 
 A brief mixed-cache state affected Products and Pricing during the first production check, but both normal URLs were rechecked and verified clean afterward.
 
+## Website Modernization Step 13 — Homepage Hero / Image Optimization — VERIFIED
+
+Step 13 replaces the old heavy homepage banner with responsive optimized WebP artwork while preserving the original banner file unchanged.
+
+Final assets:
+
+- desktop/tablet: `assets/smart-driver-forms-hero.webp` — 58,954 bytes;
+- phone: `assets/smart-driver-forms-hero-mobile.webp` — 57,036 bytes.
+
+The new visual contains no embedded feature/module claims. The existing verified homepage text and CTAs remain real HTML.
+
+Two generated concepts were rejected and not used because they contained embedded marketing/unreleased-feature claims.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step13_homepage_hero_final_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step13_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 12 review before Step 13. Next Development Note remains `v0.002`.
+Publish and verify Step 13 live, then STOP for Randall's review before Step 14. Next Development Note remains `v0.002`.

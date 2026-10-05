@@ -1160,10 +1160,67 @@ Final live verification:
 - no live page contained an old internal `*.html` href;
 - clean navigation is therefore fully live.
 
+## Website Modernization Step 13 — Homepage Hero / Image Optimization — VERIFIED 2026-10-05
+
+Randall approved replacing the heavy homepage banner with a responsive website-specific hero.
+
+Implementation decision:
+
+- two image-generator concepts were rejected because they embedded marketing text and unreleased-feature claims;
+- no generated concept was committed or used;
+- the final website artwork was created deterministically from the existing approved Smart Driver Forms banner artwork;
+- the original source banner remains preserved byte-for-byte.
+
+Homepage changes:
+
+- replaced the old 1.85 MB banner reference with two optimized WebP hero assets:
+  - desktop/tablet: `assets/smart-driver-forms-hero.webp` — 1600×640 — 58,954 bytes;
+  - phone: `assets/smart-driver-forms-hero-mobile.webp` — 760×584 — 57,036 bytes;
+- the new assets contain only the truck/road visual and no embedded module/feature marketing text;
+- preserved the original `assets/smart-driver-forms-facebook-cover.png` unchanged;
+- moved the existing real homepage headline, description, and CTAs into a responsive HTML hero layout;
+- desktop overlays the real HTML content over the dark side of the visual;
+- tablet stacks the artwork above the HTML content;
+- phone uses the closer mobile truck crop above the same HTML content;
+- added explicit image dimensions and high-priority loading metadata to reduce layout shift and improve first-view loading;
+- preserved the verified Google Play and Current Features CTAs;
+- no product availability wording was changed.
+
+Files changed/added:
+
+- `index.html`;
+- `style.css`;
+- `assets/smart-driver-forms-hero.webp`;
+- `assets/smart-driver-forms-hero-mobile.webp`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 13 files limited to the approved homepage/CSS/new assets: PASSED;
+- original banner SHA-256 unchanged:
+  `f056870834cdda22164e873df493a0d01144e81ed99ad4951dce1eb04b3a7427`;
+- both new WebP assets under 100 KB: PASSED;
+- expected dimensions: PASSED;
+- old 1.85 MB banner no longer referenced by Home: PASSED;
+- real HTML headline and CTA copy preserved: PASSED;
+- local assets resolve: PASSED;
+- desktop visual render: PASSED;
+- 820 px tablet visual render: PASSED;
+- 390 px phone visual render: PASSED.
+
+Validation logs:
+
+- `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step13_homepage_hero_validation_20261005.txt`;
+- `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step13_homepage_hero_final_validation_20261005.txt`.
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step13_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 12 review before starting Step 13.
+Publish Step 13 to GitHub/Cloudflare, verify the live homepage references and serves the optimized WebP assets, then STOP for Randall's review before Step 14.
 
-Do not begin homepage banner/image modernization until Step 13 is approved.
+Do not begin Step 14 until approved.
 
 The next Development Note remains `v0.002`.
