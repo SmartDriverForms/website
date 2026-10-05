@@ -1898,8 +1898,42 @@ Verification:
 - Pricing no-public-pricing wording retained: PASSED;
 - Fleet Portal planned/not-open wording retained: PASSED.
 
+Step 23 production verification:
+
+- commit `0c949d9 Improve fleet sign-in routing` pushed to `origin/main`;
+- Cloudflare deployment verified live on attempt 6;
+- live Sign In page contains both Fleet Portal Status and For Fleets paths;
+- repository and `origin/main` synchronized at verification.
+
+## Website Modernization Step 24 — Privacy / Delete Account Consistency Review — VERIFIED 2026-10-05
+
+Randall approved reviewing the Privacy Policy and Delete Account pages together.
+
+The existing verified legal/data-handling wording was treated as protected and was not rewritten for style.
+
+Cross-check result:
+
+- both pages agree that account deletion removes the active authentication/login account;
+- both agree that the active driver profile is removed;
+- both agree that registered-device records associated with the account are removed;
+- both agree that account-linked support requests stored in the app backend are removed;
+- both agree that account-specific local files in the account directory on that device are removed;
+- both agree that device-wide preferences such as the app theme may remain;
+- both agree that retained trip forms, finalized documents/PDFs, related document records, and other historical business records are not automatically deleted;
+- both agree that a permanent internal historical owner identifier may remain so retained records preserve historical ownership;
+- both agree that the real email address is removed from that historical owner record and replaced with a non-deliverable deleted-account placeholder;
+- both explain that information already contained inside retained historical records may remain;
+- Privacy links directly to Delete Account instructions;
+- Delete Account links directly to the Privacy Policy;
+- both provide the Smart Driver Forms Support email path;
+- Delete Account explicitly warns not to send a password, consistent with the Privacy Policy.
+
+No factual or cross-link mismatch was found. No HTML/CSS/JavaScript change is warranted.
+
+Step 24 closes as a verified no-change review.
+
 ## Exact Next Action
 
-Publish Step 23 and verify the new Sign In Fleet Portal status path live. Then proceed to Step 24: review the Privacy Policy and Delete Account pages together for current accuracy and cross-link consistency, without changing verified legal/data-handling wording unless a real mismatch is found.
+Step 25: perform a final whole-site consistency and link audit across all public pages, including internal links, external destinations, page titles/descriptions, current-vs-development wording, and responsive/navigation consistency. Fix only verified defects.
 
 The next Development Note remains `v0.002`.
