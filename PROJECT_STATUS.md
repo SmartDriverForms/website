@@ -1016,9 +1016,74 @@ Verified live:
 - `Do not send your password` warning;
 - production verification passed on Cloudflare check attempt 5.
 
+## Website Modernization Step 11 — Direct-Access Legacy Page Cleanup — VERIFIED 2026-10-05
+
+Randall approved cleanup of the three older pages that are no longer in normal navigation but remain directly reachable.
+
+Scope was limited to:
+
+- `pricing.html`;
+- `signin.html`;
+- `fleet-portal.html`.
+
+No shared CSS changes were required and the other 8 HTML pages were not changed.
+
+Pricing page:
+
+- removes placeholder plan cards and all `Coming Soon` wording;
+- states clearly that public pricing has not been announced;
+- states there is no published driver plan price;
+- states there is no published fleet plan price;
+- states no release date is being promised;
+- links to current Products and Support.
+
+Sign In page:
+
+- states clearly that there is no driver or fleet website login yet;
+- directs drivers to the current Android app;
+- links to the verified Google Play listing;
+- identifies Fleet Portal access as planned and not open yet;
+- identifies the Admin Portal as authorized Smart Driver Forms administration/support access only;
+- states Admin is not a driver or fleet customer login.
+
+Fleet Portal page:
+
+- states clearly that the Fleet Portal is planned and not open for customer use;
+- states there is no fleet customer login, published fleet pricing, or promised release date;
+- retains a concise planned-direction view for:
+  - Driver Records;
+  - Trip Sheets;
+  - Documents;
+  - Reports;
+  - Company Organization;
+- links to For Fleets and current Products;
+- removes all stale `Coming Soon` wording.
+
+All three pages received current meta descriptions.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 11 product changes limited to the three approved pages: PASSED;
+- other 8 HTML pages unchanged: PASSED;
+- stale `Coming Soon` removed from all three: PASSED;
+- one H1 and local links valid on all three pages: PASSED;
+- Google Play endpoint: HTTP 200;
+- Admin Portal endpoint: HTTP 200;
+- desktop render for all three pages: PASSED;
+- 390 px phone render for all three pages: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step11_legacy_pages_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step11_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 10 review before starting Step 11.
+Publish Step 11 to GitHub/Cloudflare, verify the live Pricing, Sign In, and Fleet Portal pages, then STOP for Randall's review before Step 12.
 
 Do not change other page bodies until the next step is approved.
 

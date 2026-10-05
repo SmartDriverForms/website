@@ -556,6 +556,31 @@ Verified public Delete Account page includes:
 - Support contact and password warning;
 - Privacy Policy link.
 
+## Website Modernization Step 11 — Direct-Access Legacy Page Cleanup — VERIFIED
+
+Step 11 cleaned up only:
+
+- Pricing;
+- Sign In;
+- Fleet Portal.
+
+All three now accurately reflect current status:
+
+- no public pricing announced;
+- no driver/fleet website login yet;
+- drivers use the Android app;
+- Fleet Portal is planned and not open;
+- Admin Portal is authorized internal administration/support access;
+- no stale `Coming Soon` wording.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step11_legacy_pages_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step11_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 10 review before Step 11. Next Development Note remains `v0.002`.
+Publish and verify Step 11 live, then STOP for Randall's review before Step 12. Next Development Note remains `v0.002`.
