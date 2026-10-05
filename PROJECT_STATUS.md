@@ -571,10 +571,66 @@ Verified live:
 - Smart Haz-Mat absent;
 - production verification passed on Cloudflare check attempt 4.
 
+## Website Modernization Step 5 — For Drivers Page — VERIFIED 2026-10-05
+
+Randall approved rebuilding the For Drivers page.
+
+Scope was limited to `drivers.html` plus shared CSS required for the Drivers layout. The other 10 HTML pages were not changed.
+
+For Drivers page changes:
+
+- replaced the old product/placeholder cards with a driver-benefit-focused page;
+- added the headline `Built around the work you already do`;
+- added verified Google Play CTA and Products link;
+- clearly identifies the intended driver groups:
+  - Company Drivers;
+  - Lease Purchase Drivers;
+  - Owner Operators;
+- explains current practical benefits:
+  - Trip Paperwork;
+  - Finalized Trip Sheets;
+  - Mileage Recaps;
+  - Organized Records;
+- added a practical-design section explaining:
+  - enter information once and reuse it where helpful;
+  - keep current tools clear and development work separate until ready;
+  - the app supports driver work rather than replacing driver judgment;
+- added direct Support access;
+- removed the old Driver Account / Coming Soon placeholder messaging;
+- no unreleased module names are marketed on the page.
+
+Files changed:
+
+- `drivers.html`;
+- `style.css`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 5 product changes limited to `drivers.html` and `style.css`: PASSED;
+- other 10 HTML pages unchanged: PASSED;
+- driver page contains all approved driver types and current benefit sections: PASSED;
+- Smart Parking absent: PASSED;
+- Smart Logs & HOS absent: PASSED;
+- Smart Haz-Mat absent: PASSED;
+- `Coming Soon` placeholder wording absent: PASSED;
+- Google Play CTA target: HTTP 200 / Smart Driver Forms listing: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step5_drivers_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step5_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 4 review before starting Step 5.
+Publish Step 5 to GitHub/Cloudflare, verify the live For Drivers page, then STOP for Randall's review before Step 6.
 
-Do not change Drivers, Fleets, Support, About, or other page bodies until the next step is approved.
+Do not change Fleets, Support, About, or other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.
