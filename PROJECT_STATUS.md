@@ -1677,8 +1677,37 @@ Step 16 live verification:
 - repository and `origin/main` were synchronized at verification;
 - Randall reviewed the live result and explicitly approved Step 16 on 2026-10-05.
 
+## Website Modernization Step 17 — Navigation / Menu Review — VERIFIED 2026-10-05
+
+Reviewed the primary navigation across all 11 pages and the shared responsive menu behavior.
+
+Approved structure retained:
+
+`Home → Products → For Drivers → For Fleets → Support → About`
+
+Decision:
+
+- keep the six primary destinations in their existing order;
+- do not add Pricing, Sign In, Fleet Portal, Privacy, Delete Account, or Admin to the primary navigation at this stage;
+- those pages are future/secondary/legal/administrative destinations and do not warrant permanent primary-menu space now.
+
+Behavior improvements:
+
+- mobile/tablet Menu icon now changes from ☰ to ✕ while open;
+- Escape closes an open menu and returns keyboard focus to the Menu button;
+- selecting a navigation link still closes the menu;
+- resizing above the mobile/tablet breakpoint still closes the responsive menu;
+- all 11 pages now reference `script.js?v=20261005-17` so the behavior update cannot be masked by an older browser cache.
+
+Verification:
+
+- `node --check script.js`: PASSED;
+- `git diff --check`: PASSED;
+- all 11 pages retain the identical six-link primary navigation in the approved order: PASSED;
+- all 11 pages reference the Step 17 JavaScript version: PASSED.
+
 ## Exact Next Action
 
-Step 17: review the website navigation/menu across phone, tablet, and desktop. Determine the recommended menu order, wording, and destinations before making any material navigation changes.
+Publish Step 17 and verify the versioned JavaScript is live. Then Randall can review the Menu open/close behavior on his phone.
 
 The next Development Note remains `v0.002`.
