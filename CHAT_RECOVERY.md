@@ -784,6 +784,16 @@ Step 14F:
 - bumps homepage stylesheet cache version to `14f`;
 - leaves image, tablet, desktop, wording, and JavaScript behavior unchanged.
 
+## Step 14F Production Deployment — VERIFIED
+
+Step 14F is live on Cloudflare.
+
+Verified:
+
+- versioned `14f` stylesheet is live;
+- Android/WebKit text autosizing is disabled;
+- standards-based text autosizing control is also present.
+
 ## Exact Next Action
 
-Publish and verify Step 14F live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.
+STOP for Randall's live phone review. Next Development Note remains `v0.002`.

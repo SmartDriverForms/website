@@ -1536,8 +1536,23 @@ Validation log:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14f_text_autosize_validation_20261005.txt`
 
+## Step 14F Production Deployment — VERIFIED 2026-10-05
+
+Step 14F was pushed to GitHub at:
+
+`84566b8 Disable mobile text autosizing`
+
+Cloudflare published the mobile text-autosizing fix successfully.
+
+Verified live:
+
+- homepage references `style.css?v=20261005-14f`;
+- live stylesheet contains `-webkit-text-size-adjust: 100%;`;
+- live stylesheet contains `text-size-adjust: 100%;`;
+- production verification passed on Cloudflare check attempt 4.
+
 ## Exact Next Action
 
-Publish Step 14F to GitHub/Cloudflare, verify the live homepage references `style.css?v=20261005-14f` and the live stylesheet contains both text-size-adjust rules, then STOP for Randall's phone review.
+STOP for Randall's live phone review.
 
 The next Development Note remains `v0.002`.
