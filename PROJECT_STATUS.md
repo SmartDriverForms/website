@@ -485,9 +485,25 @@ Visual review folder:
 
 Note: the existing large homepage banner is intentionally preserved in Step 3. Artwork/image modernization remains a separate later step.
 
+## Step 3 Production Deployment — VERIFIED 2026-10-05
+
+Step 3 was pushed to GitHub at:
+
+`f5024ae Rebuild public homepage`
+
+Cloudflare published the new Home page successfully.
+
+Verified live:
+
+- headline: `Less paperwork. More time behind the wheel.`;
+- `Get the App on Google Play` CTA present;
+- Smart Mileage Recap present as a current feature;
+- Smart Parking absent from Home;
+- deployment verification passed on Cloudflare check attempt 2.
+
 ## Exact Next Action
 
-Publish Step 3 to GitHub/Cloudflare, verify the live Home page and Google Play CTA, then STOP for Randall's review before Step 4.
+STOP for Randall's live Step 3 review before starting Step 4.
 
 Do not change Products or other page bodies until the next step is approved.
 

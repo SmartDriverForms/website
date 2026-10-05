@@ -269,6 +269,17 @@ Screenshots:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step3_screenshots_20261005/`
 
+## Step 3 Production Deployment — VERIFIED
+
+Step 3 is live on Cloudflare.
+
+Verified public Home page:
+
+- new driver-focused headline;
+- real Google Play CTA;
+- Smart Driver Trip Sheet and Smart Mileage Recap as current public tools;
+- no Smart Parking marketing on Home.
+
 ## Exact Next Action
 
-Publish and verify Step 3 live, then STOP for Randall's review before Step 4. Next Development Note remains `v0.002`.
+STOP for Randall's Step 3 review before Step 4. Next Development Note remains `v0.002`.
