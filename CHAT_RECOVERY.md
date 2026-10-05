@@ -773,6 +773,17 @@ Verified:
 - phone headline is 2.35rem;
 - Step 14D direct phone detection remains active.
 
+## Website Modernization Step 14F — Mobile Text Autosizing Fix — VERIFIED
+
+The remaining phone issue is now isolated to browser text inflation.
+
+Step 14F:
+
+- disables Android/WebKit text autosizing with `-webkit-text-size-adjust: 100%`;
+- includes standards-based `text-size-adjust: 100%`;
+- bumps homepage stylesheet cache version to `14f`;
+- leaves image, tablet, desktop, wording, and JavaScript behavior unchanged.
+
 ## Exact Next Action
 
-STOP for Randall's live phone review. Next Development Note remains `v0.002`.
+Publish and verify Step 14F live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.

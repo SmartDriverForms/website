@@ -1507,8 +1507,37 @@ Verified live:
 - explicit `phone-layout` detection from Step 14D remains active;
 - production verification passed on Cloudflare check attempt 4.
 
+## Website Modernization Step 14F — Mobile Text Autosizing Fix — VERIFIED 2026-10-05
+
+Randall's latest phone screenshot showed that the hero image was finally using the correct short phone layout, but all webpage text was still being enlarged together by the mobile browser.
+
+Diagnosis:
+
+- the image height and phone-layout detection are now correct;
+- site name, Menu button, headline, green tagline, and body text were all inflated together;
+- that pattern is consistent with Android/Chrome mobile text autosizing rather than incorrect individual CSS font sizes.
+
+Fix:
+
+- added `-webkit-text-size-adjust: 100%;` to the root HTML element;
+- added standards-based `text-size-adjust: 100%;`;
+- bumped the homepage stylesheet cache reference to `style.css?v=20261005-14f`;
+- no font-size rules, wording, images, tablet layout, or desktop layout were otherwise changed.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- changes limited to `index.html` and `style.css`: PASSED;
+- both text-size-adjust declarations present: PASSED;
+- homepage stylesheet cache version is `14f`: PASSED;
+- JavaScript syntax remains valid.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14f_text_autosize_validation_20261005.txt`
+
 ## Exact Next Action
 
-STOP for Randall's live phone review.
+Publish Step 14F to GitHub/Cloudflare, verify the live homepage references `style.css?v=20261005-14f` and the live stylesheet contains both text-size-adjust rules, then STOP for Randall's phone review.
 
 The next Development Note remains `v0.002`.
