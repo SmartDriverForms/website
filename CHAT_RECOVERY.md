@@ -73,9 +73,11 @@ Repository-specific Development Notes folder:
 
 Independent sequence:
 
-- completed repository-specific notes: 0;
-- first note: `v0.001`;
-- expected first filename: `YYYY-MM-DD - Smart Driver Forms Website - Development Notes - v0.001.docx`.
+- completed repository-specific notes: 1;
+- latest note: `2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`;
+- latest version: `v0.001`;
+- checkpoint covered: `2f16f15 Organize website Development Note history`;
+- next note: `v0.002`.
 
 Historical website-related notes are stored under:
 
@@ -108,6 +110,22 @@ Validation log:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/historical_note_organization_validation_20261005.txt`
 
+## Development Note v0.001 — Verified Complete
+
+Canonical file:
+
+`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`
+
+SHA-256:
+
+`b47f5541b2309abea8251d4c5d143e87b1543f12495559370f8d3835ed79c0ce`
+
+The exact stored DOCX rendered to 4 pages and all pages passed visual inspection. The post-note version gate advances mechanically to `v0.002`.
+
+Final validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/development_note_v0001_final_validation_20261005.txt`
+
 ## Exact Next Action
 
-Create and visually verify `2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`, then record it in the index/status and advance the next repository-specific Development Note to `v0.002`.
+Review the current public website against the current Smart Driver Forms product and choose the first approved website improvement. Preserve the historical-note boundary and use `v0.002` for the next repository-specific Development Note.

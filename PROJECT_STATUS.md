@@ -96,9 +96,11 @@ This repository now has an independent Development Note sequence beginning at `v
 
 Current verified state:
 
-- completed repository-specific Development Notes: 0;
-- first Development Note: `v0.001`;
-- expected first filename: `YYYY-MM-DD - Smart Driver Forms Website - Development Notes - v0.001.docx`.
+- completed repository-specific Development Notes: 1;
+- latest Development Note: `2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`;
+- latest version: `v0.001`;
+- final Git checkpoint covered by that note: `2f16f15 Organize website Development Note history`;
+- next Development Note: `v0.002`.
 
 Historical website-related Development Notes are preserved under:
 
@@ -176,6 +178,28 @@ Validation log:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/historical_note_organization_validation_20261005.txt`
 
+## Development Note v0.001 — Complete 2026-10-05
+
+Canonical file:
+
+`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`
+
+Verification:
+
+- stored DOCX size: 4,858 bytes;
+- SHA-256: `b47f5541b2309abea8251d4c5d143e87b1543f12495559370f8d3835ed79c0ce`;
+- exact stored bytes were copied into the document QA environment;
+- DOCX rendered successfully to 4 pages;
+- all 4 rendered pages were visually inspected;
+- no clipping, overlap, missing text, or broken layout was found;
+- post-note version gate: `OLD VERSION: v0.001` / `NEW VERSION: v0.002`.
+
+Final validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/development_note_v0001_final_validation_20261005.txt`
+
+The note consolidates verified website history, preserves the three historical source notes, records the repository relocation/recovery setup, and covers Git through `2f16f15`.
+
 ## Exact Next Action
 
-Commit the historical-note organization/governance update, then create and visually verify the first repository-specific Development Note as `2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`.
+Begin website product review from the preserved `375117f` product baseline. Compare the current public pages/navigation with the current Smart Driver Forms product and select the first approved website content, navigation, presentation, or documentation change. The next Development Note is `v0.002`.
