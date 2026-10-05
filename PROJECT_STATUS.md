@@ -1630,8 +1630,48 @@ Accepted phone presentation includes:
 
 Step 15 is closed and becomes the approved mobile homepage baseline.
 
+## Website Modernization Step 16 — Mobile / Tablet Site Audit — VERIFIED 2026-10-05
+
+Randall approved a responsive review of every existing non-home public page.
+
+Pages audited:
+
+- About
+- Delete Account
+- For Drivers
+- Fleet Portal
+- For Fleets
+- Pricing / Plans
+- Privacy
+- Products
+- Sign In
+- Support
+
+Results:
+
+- phone layouts showed no horizontal overflow, clipped content, broken cards, or unusable controls;
+- tablet layouts showed no confirmed structural display problems;
+- one consistency issue was found: non-home pages retained the older larger phone header while the homepage used the approved compact Step 15 header.
+
+Step 16 correction:
+
+- added a true phone-width (`max-width: 600px`) shared header rule matching the approved compact homepage header;
+- tablet and desktop header behavior remains unchanged;
+- all 11 HTML pages now reference the same cache-busted stylesheet `style.css?v=20261005-16`;
+- no page wording, content structure, tablet content sizing, or desktop content sizing changed.
+
+Audit folders:
+
+- `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step16_mobile_audit_20261005/`
+- `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step16_tablet_audit_20261005/`
+
+Verification:
+
+- `node --check script.js`: PASSED;
+- `git diff --check`: PASSED.
+
 ## Exact Next Action
 
-Proceed to the next website modernization step from the approved Step 15 baseline.
+Publish Step 16, verify the shared versioned stylesheet live, then have Randall approve the consistent phone header on a non-home page.
 
 The next Development Note remains `v0.002`.
