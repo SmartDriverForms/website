@@ -1390,8 +1390,23 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14c_screenshots_20261005/`
 
+## Step 14C Production Deployment — VERIFIED 2026-10-05
+
+Step 14C was pushed to GitHub at:
+
+`e563cde Fix phone hero breakpoint`
+
+Cloudflare published the corrected phone media-query logic successfully.
+
+Verified live:
+
+- homepage mobile `<source media>` includes the tall-phone fallback condition;
+- live CSS includes:
+  `@media (max-width: 760px), (max-width: 980px) and (max-aspect-ratio: 3/5)`;
+- production verification passed on Cloudflare check attempt 2.
+
 ## Exact Next Action
 
-Publish Step 14C to GitHub/Cloudflare, verify the new combined media condition is live, then STOP for Randall's phone review.
+STOP for Randall's live phone review.
 
 The next Development Note remains `v0.002`.

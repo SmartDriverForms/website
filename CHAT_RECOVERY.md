@@ -718,6 +718,12 @@ Verified:
 - artificially wide tall phone: phone layout;
 - tablet portrait: tablet layout.
 
+## Step 14C Production Deployment — VERIFIED
+
+Step 14C is live on Cloudflare.
+
+The corrected tall-phone fallback media condition is present in both the live homepage source and live CSS.
+
 ## Exact Next Action
 
-Publish and verify Step 14C live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.
+STOP for Randall's live phone review. Next Development Note remains `v0.002`.
