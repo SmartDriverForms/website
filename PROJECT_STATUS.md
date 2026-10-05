@@ -1731,8 +1731,39 @@ Result:
 - the existing Google Play CTA and development disclaimer remain appropriate;
 - Step 18 therefore closes as a verified no-change review rather than unnecessary rework.
 
+## Website Modernization Step 19 — For Drivers Usefulness Review — VERIFIED 2026-10-05
+
+Randall approved the For Drivers review.
+
+Review result:
+
+- the Step 5 page remains accurate and useful and did not warrant a redesign;
+- current public capabilities remain clearly described as trip paperwork, finalized trip sheets, mileage recaps, and organized records;
+- Google Play, Products, and Support paths remain prominent;
+- driver audiences remain Company Drivers, Lease Purchase Drivers, and Owner Operators;
+- one useful gap was identified: after describing today's tools, the page had no direct path for a driver who wants to see what is being built next.
+
+Improvement made:
+
+- added a short `What is next` section;
+- clearly says additional tools are still in development before they reach drivers;
+- links to the Products page for the authoritative Available Now / In Development separation;
+- no future tool is presented as currently available.
+
+Files changed:
+
+- `drivers.html`;
+- `PROJECT_STATUS.md`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- new Products path present: PASSED;
+- development wording present: PASSED;
+- no CSS change required; the section reuses the already-tested `next-tools`, `alt-section`, and `text-link` styles.
+
 ## Exact Next Action
 
-Step 19: review the For Drivers page for clarity, usefulness, and consistency with the approved Products page and current public app.
+Publish Step 19 and verify the new For Drivers section is live. Then proceed to Step 20: review the For Fleets page for clarity and appropriate expectations while fleet tools remain future work.
 
 The next Development Note remains `v0.002`.
