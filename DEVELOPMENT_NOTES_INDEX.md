@@ -6,7 +6,7 @@ Updated: 2026-10-05
 
 This file is the authoritative Development Note continuity record for the Smart Driver Forms Website repository.
 
-Do not use another repository's index or the historical website-related notes under the shared `Misc` folder to determine this repository's sequence.
+Do not use another repository's index or the historical website-related notes under `/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes` to determine this repository's sequence.
 
 ## Development Notes Folder
 
@@ -30,11 +30,19 @@ Website baseline before recovery-system setup:
 
 ## Historical Note Boundary
 
-Existing website-related documents under:
+Historical website-related documents are preserved under:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Misc`
+`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
 
-remain historical records. They are preserved in place and are not part of this repository-specific sequence.
+Historical source files:
+
+- `Smart Driver Forms Website and Privacy v0.001.docx`
+- `Smart Driver Forms Website and Platform v0.001.docx`
+- `Smart Driver Forms Website and Documentation v0.001.docx`
+
+These files predate the repository-specific Website Development Note sequence. They are retained as source evidence only and are excluded from sequence calculation.
+
+The canonical version gate below searches only the top level of the Website Development Notes folder with `find . -maxdepth 1`, so this historical subdirectory is mechanically excluded.
 
 ## Mandatory Pre-Draft Version Gate
 

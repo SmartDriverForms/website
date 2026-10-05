@@ -6,11 +6,19 @@ Updated: 2026-10-05
 
 This file defines the permanent Development Note workflow for the Smart Driver Forms Website repository.
 
-Development Notes are repository-specific. Do not inherit or continue numbering from another repository or from historical website-related notes stored under the shared `Misc` folder.
+Development Notes are repository-specific. Do not inherit or continue numbering from another repository or from the historical website-related notes stored under:
+
+`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
 
 ## Development Notes Folder
 
 `/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website`
+
+## Historical Source Notes
+
+The `Historical Development Notes` subdirectory contains pre-sequence website records retained for historical evidence. Those files may be consulted when reconstructing earlier website decisions and work, but they are excluded from repository-specific version continuity.
+
+The canonical version check uses `find . -maxdepth 1`, so files inside the historical subdirectory cannot advance the active sequence.
 
 ## Sequence
 

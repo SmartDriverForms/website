@@ -100,7 +100,11 @@ Current verified state:
 - first Development Note: `v0.001`;
 - expected first filename: `YYYY-MM-DD - Smart Driver Forms Website - Development Notes - v0.001.docx`.
 
-Historical website-related Development Notes already stored under `06 - Documents/Development Notes/Misc` remain historical records. They are not moved, renamed, or used to determine this repository's new independent sequence.
+Historical website-related Development Notes are preserved under:
+
+`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+
+They are historical source records only and are never used to determine this repository's independent Development Note sequence. The canonical version gate searches only the top level of the Website Development Notes folder.
 
 ## Recovery System
 
@@ -147,6 +151,31 @@ Validation log:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/recovery_setup_validation_20261005.txt`
 
+## Historical Development Notes Organization — 2026-10-05
+
+The three pre-repository-sequence website Development Notes were moved from the shared `Misc` folder into:
+
+`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+
+Preserved historical files:
+
+- `Smart Driver Forms Website and Privacy v0.001.docx`;
+- `Smart Driver Forms Website and Platform v0.001.docx`;
+- `Smart Driver Forms Website and Documentation v0.001.docx`.
+
+These files remain source evidence for earlier website decisions and work, but they do not control the new Website repository sequence.
+
+Validation passed:
+
+- exactly 3 historical DOCX files are present in the historical subdirectory;
+- the three files are absent from the former `Misc` location;
+- `git diff --check`: PASSED;
+- active top-level Development Note version gate remains `Previous Development Note: NONE` / `NEW VERSION: v0.001`.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/historical_note_organization_validation_20261005.txt`
+
 ## Exact Next Action
 
-Begin website development from the preserved existing product baseline. Review the current pages/navigation against the current Smart Driver Forms product and choose the first approved website change before editing product content.
+Commit the historical-note organization/governance update, then create and visually verify the first repository-specific Development Note as `2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`.

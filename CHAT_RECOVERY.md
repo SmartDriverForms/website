@@ -77,7 +77,11 @@ Independent sequence:
 - first note: `v0.001`;
 - expected first filename: `YYYY-MM-DD - Smart Driver Forms Website - Development Notes - v0.001.docx`.
 
-Historical website-related notes under the shared `Misc` Development Notes folder remain historical only and do not control this repository's numbering.
+Historical website-related notes are stored under:
+
+`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+
+They remain historical source records only and do not control this repository's numbering. The version gate searches only the top level of the Website Development Notes folder.
 
 ## Recovery Setup Validation
 
@@ -96,6 +100,14 @@ Validation log:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/recovery_setup_validation_20261005.txt`
 
+## Historical Note Organization — Verified 2026-10-05
+
+The three pre-sequence website Development Notes are preserved under `Historical Development Notes`. Validation confirmed exactly three historical DOCX files, removal from the former `Misc` location, clean diff checking, and an unchanged active version gate of `v0.001`.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/historical_note_organization_validation_20261005.txt`
+
 ## Exact Next Action
 
-Review the current website baseline and choose the first approved page/content/navigation improvement. Do not alter website product files until that specific website task is established.
+Create and visually verify `2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`, then record it in the index/status and advance the next repository-specific Development Note to `v0.002`.
