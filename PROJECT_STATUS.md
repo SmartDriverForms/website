@@ -1337,8 +1337,28 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14b_screenshots_20261005/`
 
+## Step 14B Production Deployment — VERIFIED 2026-10-05
+
+Step 14B was pushed to GitHub at:
+
+`39ffdaa Force-refresh mobile homepage hero`
+
+Cloudflare published the cache-safe mobile hero fix successfully.
+
+Verified live:
+
+- homepage references `smart-driver-forms-hero-mobile-v2.webp`;
+- live CSS contains the 180 px phone-height cap;
+- live CSS contains `object-fit: cover`;
+- live v2 mobile WebP SHA-256 exactly matches the locally tested asset:
+  `2e901f152502feea341ab4f7fd456b90ba9bc19a00f975214b5f482f39006d5b`;
+- live v2 mobile asset size: 34,408 bytes;
+- production HTML/CSS verification passed on Cloudflare check attempt 3.
+
 ## Exact Next Action
 
-Publish Step 14B to GitHub/Cloudflare, verify the live homepage references and serves `smart-driver-forms-hero-mobile-v2.webp`, then STOP for Randall's phone review.
+STOP for Randall's live phone review of the cache-busted Step 14B hero.
+
+If the phone still shows the old tall artwork, first reload the page once; the HTML now references a brand-new asset filename, so the browser must request the corrected image.
 
 The next Development Note remains `v0.002`.

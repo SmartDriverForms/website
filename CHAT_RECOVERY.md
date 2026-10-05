@@ -692,6 +692,17 @@ Step 14B:
 
 360 px and 390 px phone renders passed.
 
+## Step 14B Production Deployment — VERIFIED
+
+Step 14B is live on Cloudflare.
+
+Verified:
+
+- homepage now references the new cache-busting mobile filename;
+- phone hero is hard-capped at 180 px;
+- `object-fit: cover` is live;
+- live mobile asset hash exactly matches the tested local file.
+
 ## Exact Next Action
 
-Publish and verify Step 14B live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.
+STOP for Randall's live phone review. Next Development Note remains `v0.002`.
