@@ -1829,8 +1829,35 @@ Verification:
 - password warning remains present: PASSED;
 - requested support-information guidance remains present: PASSED.
 
+Step 21 production verification:
+
+- commit `a54262d Improve support contact access` pushed to `origin/main`;
+- Cloudflare deployment verified live on attempt 7;
+- live Support page contains the top-level Email Support and Privacy Policy actions;
+- repository and `origin/main` synchronized at verification.
+
+## Website Modernization Step 22 — About Page Identity Review — VERIFIED 2026-10-05
+
+Randall approved the About-page review.
+
+The current About page was reviewed against the approved website direction and current product state.
+
+Result:
+
+- no content or design change is warranted;
+- the page clearly identifies Smart Driver Forms as a growing set of practical driver tools;
+- it explains the core purpose: reduce repetitive paperwork and keep driver records organized;
+- it identifies Company Drivers, Lease Purchase Drivers, and Owner Operators as the intended driver groups;
+- the `Useful first. Bigger second.` section clearly explains the build philosophy without unnecessary technical detail;
+- the page separates ready features from development work conceptually and makes no release, pricing, purchase, or trial promises;
+- the driver-first direction and planned future fleet direction remain accurate;
+- Products and For Drivers provide appropriate next paths;
+- unlike the homepage, the About page appropriately provides a fuller explanation for visitors who intentionally want background, and its sections are complementary rather than repetitive.
+
+Step 22 closes as a verified no-change review.
+
 ## Exact Next Action
 
-Publish Step 21 and verify the new top-level Support and Privacy actions live. Then proceed to Step 22: review the About page for concise company/product identity and remove any stale or unnecessary wording.
+Step 23: review the remaining secondary public pages — Pricing, Sign In, and Fleet Portal — as one consistency pass. Confirm they correctly route visitors without implying unavailable customer capabilities.
 
 The next Development Note remains `v0.002`.
