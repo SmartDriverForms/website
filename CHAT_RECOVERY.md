@@ -502,6 +502,19 @@ Screenshots:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step9_screenshots_20261005/`
 
+## Step 9 Production Deployment — VERIFIED
+
+Step 9 is live on Cloudflare.
+
+Verified public Privacy Policy includes:
+
+- current effective date;
+- Supabase backend disclosure;
+- controlled admin read-access disclosure;
+- accurate public-release location-permission wording;
+- disabled Smart Parking status;
+- Cloudflare website-hosting disclosure.
+
 ## Exact Next Action
 
-Publish and verify Step 9 live, then STOP for Randall's review before Step 10. Next Development Note remains `v0.002`.
+STOP for Randall's Step 9 review before Step 10. Next Development Note remains `v0.002`.
