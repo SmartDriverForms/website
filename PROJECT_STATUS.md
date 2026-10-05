@@ -346,10 +346,26 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step1_screenshots_20261005/`
 
+## Step 1 Production Deployment — VERIFIED 2026-10-05
+
+Randall approved publishing Step 1.
+
+Deployment:
+
+- pushed `main` through `c39f12d Standardize website header and responsive navigation` to GitHub;
+- local `main` and `origin/main` matched immediately after push;
+- Cloudflare deployment became live on the third production check;
+- live homepage contains the new `nav-toggle` markup;
+- live Support page contains the standardized `primary-navigation`;
+- live `style.css` SHA-256 exactly matches the locally verified stylesheet;
+- live `script.js` SHA-256 exactly matches the locally verified responsive-menu script.
+
+Production Step 1 is therefore verified live.
+
 ## Exact Next Action
 
-STOP after Step 1 and obtain Randall's review/approval before starting Step 2.
+Randall should review the live Step 1 website on his normal devices/browser.
 
-No Home, Products, pricing, product-status, or other page-body content changes should be made until Randall approves the Step 1 website frame.
+STOP and obtain Randall's approval before starting Step 2. Do not rewrite Home, Products, Pricing, or other page-body content until approved.
 
 The next Development Note remains `v0.002`.
