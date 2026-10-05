@@ -1298,8 +1298,47 @@ Verified live:
 - desktop hero remains unchanged;
 - production HTML verification passed on Cloudflare check attempt 5.
 
+## Website Modernization Step 14B — Mobile Hero Cache/Height Fix — VERIFIED 2026-10-05
+
+Randall's live phone screenshot showed the older Step 13 mobile artwork was still being displayed after Step 14.
+
+Diagnosis:
+
+- the corrected Step 14 crop itself was valid;
+- the phone was reusing the old mobile image under the same asset filename;
+- the screenshot's large purple chevron confirmed stale mobile-image caching rather than a current crop problem.
+
+Fix:
+
+- created a new cache-busting asset filename:
+  `assets/smart-driver-forms-hero-mobile-v2.webp`;
+- updated the homepage mobile `srcset` to the new filename;
+- preserved the corrected 760×360 crop;
+- added a hard mobile hero-picture height of 180 px at 760 px width and below;
+- added `object-fit: cover` and centered object positioning;
+- tightened mobile hero-copy top spacing from the tablet value to 28 px;
+- kept desktop artwork and desktop layout unchanged.
+
+Files changed/added:
+
+- `index.html`;
+- `style.css`;
+- `assets/smart-driver-forms-hero-mobile-v2.webp`.
+
+Verification:
+
+- 360 px phone render: PASSED;
+- 390 px phone render: PASSED;
+- desktop render: PASSED / unchanged;
+- corrected mobile asset is 34,408 bytes;
+- cache-busting filename is unique and not previously deployed.
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14b_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 14 review before starting Step 15.
+Publish Step 14B to GitHub/Cloudflare, verify the live homepage references and serves `smart-driver-forms-hero-mobile-v2.webp`, then STOP for Randall's phone review.
 
 The next Development Note remains `v0.002`.

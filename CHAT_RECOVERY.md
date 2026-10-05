@@ -678,6 +678,20 @@ Verified:
 - live asset hash exactly matches the locally tested file;
 - desktop hero remains unchanged.
 
+## Website Modernization Step 14B — Mobile Hero Cache/Height Fix — VERIFIED
+
+Randall's phone screenshot showed stale mobile artwork was still being reused under the old filename.
+
+Step 14B:
+
+- uses new cache-busting asset `smart-driver-forms-hero-mobile-v2.webp`;
+- caps the phone hero at 180 px tall;
+- uses `object-fit: cover`;
+- brings the headline closer to the image;
+- leaves desktop unchanged.
+
+360 px and 390 px phone renders passed.
+
 ## Exact Next Action
 
-STOP for Randall's Step 14 review before Step 15. Next Development Note remains `v0.002`.
+Publish and verify Step 14B live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.

@@ -519,6 +519,24 @@ h3 {
     }
 }
 
+@media (max-width: 760px) {
+    .home-hero-picture {
+        height: 180px;
+        overflow: hidden;
+    }
+
+    .home-hero-picture img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .home-hero-copy {
+        padding-top: 28px;
+    }
+}
+
 .portal-link {
     display: inline-block;
     margin-top: 10px;
