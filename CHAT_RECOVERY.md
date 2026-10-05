@@ -383,6 +383,18 @@ Screenshots:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step6_screenshots_20261005/`
 
+## Step 6 Production Deployment — VERIFIED
+
+Step 6 is live on Cloudflare.
+
+Verified public For Fleets page:
+
+- fleet tools clearly identified as planned, not available yet;
+- no fleet login yet;
+- no published fleet pricing yet;
+- no release date promised;
+- no old `Coming Soon` wording.
+
 ## Exact Next Action
 
-Publish and verify Step 6 live, then STOP for Randall's review before Step 7. Next Development Note remains `v0.002`.
+STOP for Randall's Step 6 review before Step 7. Next Development Note remains `v0.002`.
