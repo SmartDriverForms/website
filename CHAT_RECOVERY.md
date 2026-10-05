@@ -703,6 +703,21 @@ Verified:
 - `object-fit: cover` is live;
 - live mobile asset hash exactly matches the tested local file.
 
+## Website Modernization Step 14C — Phone Breakpoint Correction — VERIFIED
+
+The remaining phone issue was traced to a width-only media-query mismatch: Randall's phone/browser reports a layout width above 760 px, so it was receiving tablet hero behavior.
+
+Step 14C changes the phone hero condition to match either:
+
+- width ≤ 760 px; or
+- width ≤ 980 px **and** a tall phone-like portrait aspect ratio ≤ 3/5.
+
+Verified:
+
+- normal phone: phone layout;
+- artificially wide tall phone: phone layout;
+- tablet portrait: tablet layout.
+
 ## Exact Next Action
 
-STOP for Randall's live phone review. Next Development Note remains `v0.002`.
+Publish and verify Step 14C live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.

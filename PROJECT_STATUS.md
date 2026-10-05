@@ -1355,10 +1355,43 @@ Verified live:
 - live v2 mobile asset size: 34,408 bytes;
 - production HTML/CSS verification passed on Cloudflare check attempt 3.
 
+## Website Modernization Step 14C — Phone Breakpoint Correction — VERIFIED 2026-10-05
+
+Randall's live phone screenshots after Step 14B showed that the problem persisted even with a new mobile image filename and a hard 180 px phone-image cap.
+
+Root cause:
+
+- the page viewport meta tag is correct;
+- Randall's phone/browser is reporting a layout width above the original 760 px phone breakpoint while still below the 980 px tablet/navigation breakpoint;
+- therefore:
+  - the Menu/tablet rules were active;
+  - the phone-specific 180 px hero rule was not active;
+  - the browser selected the larger hero behavior;
+- pinching changed visual scale but did not correct the underlying breakpoint choice.
+
+Fix:
+
+- changed the mobile `<source media>` rule from width-only:
+  `(max-width: 760px)`
+  to:
+  `(max-width: 760px), (max-width: 980px) and (max-aspect-ratio: 3/5)`;
+- changed the matching CSS mobile-hero media query to the same combined condition;
+- this treats unusually wide-reported **tall portrait phones** as phones;
+- normal tablet portrait remains on the tablet layout because its aspect ratio is not phone-tall.
+
+Verification cases:
+
+- 390×900 normal phone: PASSED;
+- 900×1800 artificially wide phone-like portrait viewport: PASSED — 180 px phone hero active;
+- 820×1180 tablet portrait: PASSED — remains tablet layout;
+- no content wording or desktop/tablet visual design was changed.
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14c_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live phone review of the cache-busted Step 14B hero.
-
-If the phone still shows the old tall artwork, first reload the page once; the HTML now references a brand-new asset filename, so the browser must request the corrected image.
+Publish Step 14C to GitHub/Cloudflare, verify the new combined media condition is live, then STOP for Randall's phone review.
 
 The next Development Note remains `v0.002`.
