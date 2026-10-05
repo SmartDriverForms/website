@@ -1762,8 +1762,38 @@ Verification:
 - development wording present: PASSED;
 - no CSS change required; the section reuses the already-tested `next-tools`, `alt-section`, and `text-link` styles.
 
+Step 19 production verification:
+
+- commit `32566e6 Improve driver product discovery` pushed to `origin/main`;
+- Cloudflare deployment verified live on attempt 7;
+- live For Drivers page contains the new current/upcoming Products path and explicit development wording;
+- repository and `origin/main` synchronized at verification.
+
+## Website Modernization Step 20 — For Fleets Expectation Review — VERIFIED 2026-10-05
+
+Randall approved the For Fleets review.
+
+Reviewed both `fleets.html` and the supporting `fleet-portal.html` status page.
+
+Result:
+
+- no content or design change is warranted;
+- For Fleets clearly states that fleet tools are planned and not available yet;
+- it explicitly states the current public product is the driver app;
+- planned fleet areas are consistently labeled Planned;
+- it explicitly states:
+  - no fleet login yet;
+  - no published fleet pricing yet;
+  - no promised release date;
+- it directs visitors to current Products rather than a nonfunctional signup/login path;
+- Fleet Portal independently reinforces that it is planned and not open for customer use;
+- no trial, purchase, signup, pricing, or release-date promise is present;
+- adding more warning language would be repetitive, while adding more planned-feature detail would risk creating commitments before the fleet design is settled.
+
+Step 20 closes as a verified no-change review.
+
 ## Exact Next Action
 
-Publish Step 19 and verify the new For Drivers section is live. Then proceed to Step 20: review the For Fleets page for clarity and appropriate expectations while fleet tools remain future work.
+Step 21: review the Support page. Confirm that a driver can quickly identify how to get help, what information to provide, and where account/privacy/delete-account questions belong.
 
 The next Development Note remains `v0.002`.
