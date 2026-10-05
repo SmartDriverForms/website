@@ -542,6 +542,20 @@ Screenshots:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step10_screenshots_20261005/`
 
+## Step 10 Production Deployment — VERIFIED
+
+Step 10 is live on Cloudflare.
+
+Verified public Delete Account page includes:
+
+- exact in-app deletion path;
+- what is deleted;
+- what retained records remain;
+- historical-owner/email-placeholder explanation;
+- local/device preference behavior;
+- Support contact and password warning;
+- Privacy Policy link.
+
 ## Exact Next Action
 
-Publish and verify Step 10 live, then STOP for Randall's review before Step 11. Next Development Note remains `v0.002`.
+STOP for Randall's Step 10 review before Step 11. Next Development Note remains `v0.002`.
