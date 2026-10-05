@@ -1551,8 +1551,28 @@ Verified live:
 - live stylesheet contains `text-size-adjust: 100%;`;
 - production verification passed on Cloudflare check attempt 4.
 
+## Step 14G Root-Cause Mobile Scale Review — COMPLETE 2026-10-05
+
+Randall supplied matching live Android screenshots from both Firefox and Chrome. Both browsers displayed essentially the same proportions, ruling out a Firefox-specific problem.
+
+Root-cause conclusion:
+
+- the live phone is loading the correct Step 14D/14E phone layout;
+- the 120 CSS-pixel hero is being rendered at the expected physical size on a high-density Android display;
+- the 2.35rem phone headline and other CSS sizes are likewise being rendered as specified;
+- Android screenshots contain physical device pixels, while the local headless Firefox comparison renders a CSS-pixel viewport without reproducing the phone's device-pixel density;
+- therefore the local 390 px screenshots and Randall's ~708 physical-pixel-wide phone screenshots were not valid 1:1 visual-scale comparisons;
+- Chrome and Firefox matching on the real device confirms there is no remaining browser-specific scale defect;
+- Step 14F text-autosizing controls are valid but did not change the appearance because browser text inflation was not the underlying cause.
+
+No product code was changed during this root-cause review.
+
+Decision required:
+
+- if Randall wants the phone page visually denser/smaller, treat that as an intentional phone-design change rather than another browser/viewport bug fix.
+
 ## Exact Next Action
 
-STOP for Randall's live phone review.
+Ask Randall whether to keep the current standard responsive phone sizing or intentionally create a denser phone design with smaller header, hero text, supporting copy, and controls.
 
 The next Development Note remains `v0.002`.

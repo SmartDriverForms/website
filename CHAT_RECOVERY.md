@@ -794,6 +794,12 @@ Verified:
 - Android/WebKit text autosizing is disabled;
 - standards-based text autosizing control is also present.
 
+## Step 14G Root-Cause Mobile Scale Review — COMPLETE
+
+Matching real-device Chrome and Firefox screenshots rule out a browser-specific scale defect. The phone is rendering the specified CSS dimensions correctly; the earlier local screenshot comparison did not reproduce Android device-pixel density.
+
+No product code changed.
+
 ## Exact Next Action
 
-STOP for Randall's live phone review. Next Development Note remains `v0.002`.
+Randall decides whether to keep the current standard responsive sizing or intentionally make the phone design denser/smaller. Next Development Note remains `v0.002`.
