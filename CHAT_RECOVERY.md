@@ -739,6 +739,18 @@ Step 14D:
 
 Verified against a normal phone, a simulated 900 px-wide Android phone, and an 820 px tablet.
 
+## Step 14D Production Deployment — VERIFIED
+
+Step 14D is live on Cloudflare.
+
+Verified live:
+
+- versioned homepage CSS;
+- versioned homepage JavaScript;
+- new mobile-v3 hero asset;
+- explicit JavaScript phone detection;
+- explicit `phone-layout` CSS rules.
+
 ## Exact Next Action
 
-Publish and verify Step 14D live, then STOP for Randall's phone review. Next Development Note remains `v0.002`.
+STOP for Randall's live phone review. Next Development Note remains `v0.002`.

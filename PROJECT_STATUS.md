@@ -1446,8 +1446,25 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14d_screenshots_20261005/`
 
+## Step 14D Production Deployment — VERIFIED 2026-10-05
+
+Step 14D was pushed to GitHub at:
+
+`0bdf0f2 Use direct phone hero detection`
+
+Cloudflare published the direct phone-detection and full cache-busting changes successfully.
+
+Verified live:
+
+- homepage references `style.css?v=20261005-14d`;
+- homepage references `script.js?v=20261005-14d`;
+- homepage references `assets/smart-driver-forms-hero-mobile-v3.webp`;
+- live JavaScript contains the explicit `phone-layout` logic;
+- live CSS contains the explicit `.phone-layout .home-hero-picture` rules;
+- production verification passed on Cloudflare check attempt 4.
+
 ## Exact Next Action
 
-Publish Step 14D to GitHub/Cloudflare, verify the live homepage references the versioned CSS/JS and mobile-v3 image, then STOP for Randall's phone review.
+STOP for Randall's live phone review.
 
 The next Development Note remains `v0.002`.
