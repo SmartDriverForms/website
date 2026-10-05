@@ -945,10 +945,64 @@ Verified live:
 - Cloudflare website-hosting disclosure;
 - production verification passed on Cloudflare check attempt 3.
 
+## Website Modernization Step 10 — Delete Account Page — VERIFIED 2026-10-05
+
+Randall approved rebuilding the Delete Account page.
+
+Scope was limited to `delete-account.html`. No shared CSS changes were required and the other 10 HTML pages were not changed.
+
+Delete Account page changes:
+
+- verifies and documents the exact public-app path:
+  - `Settings / User → Account → Delete Account`;
+- explains that the app shows a confirmation message before deletion;
+- explains what the current deletion process removes:
+  - active Smart Driver Forms login/authentication account;
+  - active driver profile;
+  - registered-device records;
+  - account-linked support requests stored in the app backend;
+  - account-specific local files on that device;
+  - direct account identity references/free-form details from applicable audit history;
+- explains what is not automatically deleted:
+  - retained trip forms;
+  - finalized trip-sheet PDFs;
+  - related document records;
+  - other historical business records;
+- explains the permanent internal historical owner identifier;
+- explains that the real email is replaced with a non-deliverable deleted-account placeholder;
+- explains that device-wide preferences such as theme may remain;
+- preserves Support contact for users who cannot access the app;
+- explicitly says `Do not send your password`;
+- links to the Privacy Policy for fuller data-retention/privacy detail;
+- adds a page meta description.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 10 product change limited to `delete-account.html`: PASSED;
+- other 10 HTML pages unchanged: PASSED;
+- exact Settings / User → Account → Delete Account path cross-check: PASSED;
+- confirmation-dialog retention warning cross-check: PASSED;
+- local account-directory deletion cross-check: PASSED;
+- backend deletion of support requests/profile/devices/auth account cross-check: PASSED;
+- deleted-email placeholder cross-check: PASSED;
+- one H1 and local links: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step10_delete_account_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step10_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 9 review before starting Step 10.
+Publish Step 10 to GitHub/Cloudflare, verify the live Delete Account page, then STOP for Randall's review before Step 11.
 
-Do not change Delete Account or other page bodies until the next step is approved.
+Do not change other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.

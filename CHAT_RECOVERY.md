@@ -515,6 +515,33 @@ Verified public Privacy Policy includes:
 - disabled Smart Parking status;
 - Cloudflare website-hosting disclosure.
 
+## Website Modernization Step 10 — Delete Account Page — VERIFIED
+
+Step 10 rebuilt only Delete Account.
+
+The page now accurately explains:
+
+- exact in-app deletion path;
+- confirmation behavior;
+- what is deleted;
+- what retained historical records remain;
+- deleted-email placeholder behavior;
+- local-account-file deletion;
+- device-wide preference caveat;
+- Support contact;
+- password safety warning;
+- Privacy Policy link.
+
+The wording was cross-checked against the exact public `1.0.0+5` UI and backend deletion function.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step10_delete_account_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step10_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 9 review before Step 10. Next Development Note remains `v0.002`.
+Publish and verify Step 10 live, then STOP for Randall's review before Step 11. Next Development Note remains `v0.002`.
