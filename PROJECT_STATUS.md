@@ -1792,8 +1792,45 @@ Result:
 
 Step 20 closes as a verified no-change review.
 
+## Website Modernization Step 21 — Support Usability Review — VERIFIED 2026-10-05
+
+Randall approved the Support review.
+
+Review result:
+
+- the Step 7 Support page remains accurate and well structured;
+- account help covers sign-in, account confirmation, password reset, and account deletion;
+- current public-tool help covers Smart Driver Trip Sheet, Smart Mileage Recap, finalized records, and general problem reporting;
+- the detailed contact section clearly asks for:
+  - the account email address;
+  - a short problem description;
+  - which part of the app was being used;
+- the existing `Never send your password by email.` warning remains prominent;
+- Delete Account already has a direct path.
+
+Usability improvement:
+
+- added an `Email Support` button near the top so someone who already knows they need help does not have to scroll through all support topics;
+- added a top-level `Privacy Policy` button so privacy questions have an immediate destination;
+- retained the detailed contact instructions and support email lower on the page;
+- no support process, account behavior, or product claim changed.
+
+Files changed:
+
+- `support.html`;
+- `PROJECT_STATUS.md`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- top and detailed support email paths present: PASSED;
+- Privacy Policy path present: PASSED;
+- Delete Account path remains present: PASSED;
+- password warning remains present: PASSED;
+- requested support-information guidance remains present: PASSED.
+
 ## Exact Next Action
 
-Step 21: review the Support page. Confirm that a driver can quickly identify how to get help, what information to provide, and where account/privacy/delete-account questions belong.
+Publish Step 21 and verify the new top-level Support and Privacy actions live. Then proceed to Step 22: review the About page for concise company/product identity and remove any stale or unnecessary wording.
 
 The next Development Note remains `v0.002`.
