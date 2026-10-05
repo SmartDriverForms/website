@@ -1571,8 +1571,36 @@ Decision required:
 
 - if Randall wants the phone page visually denser/smaller, treat that as an intentional phone-design change rather than another browser/viewport bug fix.
 
+## Website Modernization Step 15 — Compact Phone Design — VERIFIED 2026-10-05
+
+Randall approved intentionally making the phone presentation denser after Step 14G established that the real Android browsers were rendering the specified CSS correctly.
+
+Phone-only changes:
+
+- reduced phone container side margins;
+- reduced header height;
+- reduced Smart Driver Forms brand size;
+- reduced Menu button size;
+- reduced hero image height from 120 px to 96 px;
+- reduced hero headline from 2.35rem to 1.8rem;
+- reduced eyebrow, green tagline, body copy, buttons, and vertical spacing;
+- bumped homepage stylesheet reference to `style.css?v=20261005-15`.
+
+Tablet and desktop CSS rules were not changed.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- `node --check script.js`: PASSED;
+- changed product files limited to `index.html` and `style.css`: PASSED;
+- compact sizing is scoped under `.phone-layout`: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step15_compact_phone_validation_20261005.txt`
+
 ## Exact Next Action
 
-Ask Randall whether to keep the current standard responsive phone sizing or intentionally create a denser phone design with smaller header, hero text, supporting copy, and controls.
+Publish Step 15 to GitHub/Cloudflare, verify the versioned stylesheet is live, then STOP for Randall's real-phone review.
 
 The next Development Note remains `v0.002`.
