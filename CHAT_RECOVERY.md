@@ -667,6 +667,17 @@ Screenshots:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14_screenshots_20261005/`
 
+## Step 14 Production Deployment — VERIFIED
+
+Step 14 is live on Cloudflare.
+
+Verified:
+
+- mobile hero is now `760×360`;
+- live asset size is 34,408 bytes;
+- live asset hash exactly matches the locally tested file;
+- desktop hero remains unchanged.
+
 ## Exact Next Action
 
-Publish and verify Step 14 live, then STOP for Randall's review before Step 15. Next Development Note remains `v0.002`.
+STOP for Randall's Step 14 review before Step 15. Next Development Note remains `v0.002`.

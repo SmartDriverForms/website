@@ -1281,8 +1281,25 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14_screenshots_20261005/`
 
+## Step 14 Production Deployment — VERIFIED 2026-10-05
+
+Step 14 was pushed to GitHub at:
+
+`2a660c3 Refine mobile homepage hero`
+
+Cloudflare published the refined mobile homepage hero successfully.
+
+Verified live:
+
+- homepage mobile source declares `760×360`;
+- live mobile WebP SHA-256 exactly matches the locally tested file:
+  `2e901f152502feea341ab4f7fd456b90ba9bc19a00f975214b5f482f39006d5b`;
+- live mobile hero size: 34,408 bytes;
+- desktop hero remains unchanged;
+- production HTML verification passed on Cloudflare check attempt 5.
+
 ## Exact Next Action
 
-Publish Step 14 to GitHub/Cloudflare, verify the live homepage serves the new 760×360 mobile hero asset, then STOP for Randall's review before Step 15.
+STOP for Randall's live Step 14 review before starting Step 15.
 
 The next Development Note remains `v0.002`.
