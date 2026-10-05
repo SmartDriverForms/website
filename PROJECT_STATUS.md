@@ -1139,9 +1139,30 @@ Validation log:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step12_clean_links_validation_20261005.txt`
 
+## Step 12 Production Deployment — VERIFIED 2026-10-05
+
+Step 12 was pushed to GitHub at:
+
+`db517a3 Use clean internal website URLs`
+
+Cloudflare published the clean-link changes successfully.
+
+Deployment note:
+
+- initial live verification showed the homepage updated while Products and Pricing briefly served older cached HTML;
+- cache-busted checks showed both pages had the new clean links;
+- normal Products and Pricing URLs were rechecked and then also served the new clean links;
+- final full-site verification covered all 11 clean public URLs.
+
+Final live verification:
+
+- all 11 clean public URLs returned HTTP 200;
+- no live page contained an old internal `*.html` href;
+- clean navigation is therefore fully live.
+
 ## Exact Next Action
 
-Publish Step 12 to GitHub/Cloudflare, verify the live pages contain clean internal links and every clean destination responds successfully, then STOP for Randall's review before Step 13.
+STOP for Randall's live Step 12 review before starting Step 13.
 
 Do not begin homepage banner/image modernization until Step 13 is approved.
 

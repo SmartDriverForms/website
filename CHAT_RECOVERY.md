@@ -604,6 +604,14 @@ Validation:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step12_clean_links_validation_20261005.txt`
 
+## Step 12 Production Deployment — VERIFIED
+
+Step 12 is live on Cloudflare.
+
+All 11 clean public URLs return HTTP 200, and no live page contains an old internal `*.html` href.
+
+A brief mixed-cache state affected Products and Pricing during the first production check, but both normal URLs were rechecked and verified clean afterward.
+
 ## Exact Next Action
 
-Publish and verify Step 12 live, then STOP for Randall's review before Step 13. Next Development Note remains `v0.002`.
+STOP for Randall's Step 12 review before Step 13. Next Development Note remains `v0.002`.
