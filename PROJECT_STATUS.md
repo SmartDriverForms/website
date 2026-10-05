@@ -200,6 +200,55 @@ Final validation log:
 
 The note consolidates verified website history, preserves the three historical source notes, records the repository relocation/recovery setup, and covers Git through `2f16f15`.
 
+## Full Website Review — Complete 2026-10-05
+
+Canonical review:
+
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Driver Forms Website/WEBSITE_REVIEW_2026-10-05.md`
+
+Review covered:
+
+- all 11 HTML pages;
+- shared CSS and JavaScript;
+- desktop, phone, and tablet-width rendered layouts;
+- live Cloudflare Pages deployment;
+- clean-URL behavior and live page status;
+- navigation/footer consistency;
+- current public product messaging versus current development-host modules;
+- accessibility and semantic basics;
+- SEO/discoverability;
+- image performance;
+- privacy/account-deletion consistency;
+- basic live response security headers.
+
+Verified review findings include:
+
+- live clean public URLs return HTTP 200;
+- local links/assets pass;
+- the current site is a sound early V1 shell but is materially behind the current product development state;
+- public release availability must be separated from development-only functionality before product claims are updated;
+- tablet/mobile navigation requires redesign;
+- header/footer patterns are inconsistent between newer and older page groups;
+- homepage lacks a strong Get the App/current-feature CTA;
+- Products, Drivers, Fleets, Pricing, About, Support, and Sign In need content/architecture maturation;
+- homepage banner is 1.85 MB and its embedded text becomes unreadable on phones;
+- a temporary WebP conversion demonstrated approximately 169 KB at quality 82;
+- SEO support files/metadata are incomplete;
+- Privacy should be re-audited before the next public release, particularly around current module data and location-permission posture;
+- no public website product source file was changed by this review.
+
+Review artifacts:
+
+- `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/technical_site_audit_20261005.txt`;
+- `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/live_site_probe_20261005.txt`;
+- `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/review_screenshots_20261005/`.
+
 ## Exact Next Action
 
-Begin website product review from the preserved `375117f` product baseline. Compare the current public pages/navigation with the current Smart Driver Forms product and select the first approved website content, navigation, presentation, or documentation change. The next Development Note is `v0.002`.
+Build a verified public-release availability matrix separating:
+
+1. features/modules available in the current public Google Play release;
+2. features/modules complete/integrated in development but not yet publicly released;
+3. future/planned functionality.
+
+Use that matrix as the source of truth before rewriting Home, Products, Drivers, Fleets, Pricing, or Help content. The next Development Note remains `v0.002`.
