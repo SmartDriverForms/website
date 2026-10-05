@@ -416,9 +416,26 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step2_screenshots_20261005/`
 
+## Step 2 Production Deployment — VERIFIED 2026-10-05
+
+Step 2 was pushed to GitHub at:
+
+`aae7808 Simplify website navigation`
+
+Cloudflare published the change successfully.
+
+Verified live on the homepage:
+
+- primary menu is exactly Home / Products / For Drivers / For Fleets / Support / About;
+- Pricing / Plans is absent from the primary menu;
+- Sign In is absent from the primary menu;
+- footer contains Privacy Policy / Delete Account / Support / About / Admin;
+- footer Admin link points to `https://admin.smartdriverforms.com`;
+- production verification passed on Cloudflare check attempt 3.
+
 ## Exact Next Action
 
-Publish Step 2 to GitHub/Cloudflare, verify the live menu/footer, then STOP for Randall's review before starting Step 3.
+STOP for Randall's live Step 2 review before starting Step 3.
 
 Do not rewrite Home, Products, or other page-body content until the next step is approved.
 
