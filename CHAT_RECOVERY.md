@@ -644,6 +644,29 @@ Verified:
 - live desktop and mobile image hashes exactly match the locally tested files;
 - live sizes remain about 59 KB and 57 KB respectively.
 
+## Website Modernization Step 14 — Mobile Homepage Hero Refinement — VERIFIED
+
+Randall's phone screenshots showed the Step 13 mobile hero was too tall and awkwardly cropped.
+
+Step 14 fixes only the mobile hero:
+
+- new crop: `760×360`;
+- size: 34,408 bytes;
+- truck is the focus;
+- left purple chevron is much smaller;
+- no old phone mockup edge;
+- headline appears much sooner on phone;
+- desktop hero is unchanged;
+- homepage copy and CTAs are unchanged.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14_mobile_hero_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 13 review before Step 14. Next Development Note remains `v0.002`.
+Publish and verify Step 14 live, then STOP for Randall's review before Step 15. Next Development Note remains `v0.002`.

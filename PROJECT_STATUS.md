@@ -1238,10 +1238,51 @@ Verified live:
 - live mobile asset size: 57,036 bytes;
 - production HTML verification passed on Cloudflare check attempt 4.
 
+## Website Modernization Step 14 — Mobile Homepage Hero Refinement — VERIFIED 2026-10-05
+
+Randall reviewed the live phone homepage and correctly identified that the Step 13 mobile hero was too tall and awkwardly framed.
+
+Step 14 was limited to the mobile homepage hero.
+
+Changes:
+
+- replaced the Step 13 phone crop with a much shorter `760×360` crop;
+- reduced the mobile WebP from 57,036 bytes to 34,408 bytes;
+- reframed the artwork so the truck is the main subject;
+- substantially reduced the large left-side purple chevron;
+- removed any edge of the old phone mockup from the mobile crop;
+- updated the mobile source dimensions in `index.html` from `760×584` to `760×360`;
+- kept the real homepage headline, descriptive copy, and CTAs unchanged;
+- kept the desktop hero asset byte-for-byte unchanged.
+
+Files changed:
+
+- `index.html`;
+- `assets/smart-driver-forms-hero-mobile.webp`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 14 changes limited to the approved two files: PASSED;
+- desktop hero SHA-256 unchanged:
+  `2eab4988d591f0d41dcb02ded0ea5cd4316ab9bdb85530a69f7584b3925ca2fc`;
+- mobile hero dimensions: `760×360`: PASSED;
+- mobile hero size: 34,408 bytes: PASSED;
+- hero headline and both CTA labels unchanged: PASSED;
+- 390 px first-screen phone render: PASSED;
+- 390 px taller phone render: PASSED;
+- desktop render remains visually unchanged: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14_mobile_hero_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step14_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 13 review before starting Step 14.
-
-Do not begin Step 14 until approved.
+Publish Step 14 to GitHub/Cloudflare, verify the live homepage serves the new 760×360 mobile hero asset, then STOP for Randall's review before Step 15.
 
 The next Development Note remains `v0.002`.
