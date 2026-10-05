@@ -791,10 +791,66 @@ Verified live:
 - `Never send your password by email.`;
 - `support@smartdriverforms.com`.
 
+## Website Modernization Step 8 — About Page — VERIFIED 2026-10-05
+
+Randall approved rebuilding the About page.
+
+Scope was limited to `about.html`. No shared CSS changes were required and the other 10 HTML pages were not changed.
+
+About page changes:
+
+- replaced the old one-card About page with a fuller product-focused explanation;
+- new headline: `Built around real driver work`;
+- explains what Smart Driver Forms is:
+  - a growing set of practical tools;
+  - focused on reducing paperwork;
+  - focused on keeping driver records organized;
+- explains why it exists:
+  - trucking paperwork should not be harder than the job requires;
+  - reduce repeated entry;
+  - keep records easier to find;
+  - build practical tools around real driver needs;
+- identifies the intended driver groups:
+  - Company Drivers;
+  - Lease Purchase Drivers;
+  - Owner Operators;
+- explains the build philosophy:
+  - Start With Real Work;
+  - Verify Before Expanding;
+  - Be Clear About What Is Ready;
+  - Connect the Work Over Time;
+- explains the driver-first platform direction without release promises;
+- links to Products and For Drivers;
+- improved the About page meta description.
+
+File changed:
+
+- `about.html`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 8 product change limited to `about.html`: PASSED;
+- other 10 HTML pages unchanged: PASSED;
+- purpose/audience/philosophy/direction content checks: PASSED;
+- no `Coming Soon`, purchase, or trial promises: PASSED;
+- local About links resolve: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step8_about_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step8_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 7 review before starting Step 8.
+Publish Step 8 to GitHub/Cloudflare, verify the live About page, then STOP for Randall's review before Step 9.
 
-Do not change About or other page bodies until the next step is approved.
+Do not change other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.

@@ -437,6 +437,29 @@ Verified live Support includes:
 - password-email safety warning;
 - support email.
 
+## Website Modernization Step 8 — About Page — VERIFIED
+
+Step 8 rebuilt only About.
+
+The page now explains:
+
+- what Smart Driver Forms is;
+- why it exists;
+- who it is for;
+- the practical build philosophy;
+- the driver-first platform direction;
+- links to Products and For Drivers.
+
+No release dates, pricing, trial claims, or generic `Coming Soon` language were added.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step8_about_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step8_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 7 review before Step 8. Next Development Note remains `v0.002`.
+Publish and verify Step 8 live, then STOP for Randall's review before Step 9. Next Development Note remains `v0.002`.
