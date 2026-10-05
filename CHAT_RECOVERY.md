@@ -472,6 +472,36 @@ Verified public About page includes:
 - practical build philosophy;
 - driver-first platform direction.
 
+## Website Modernization Step 9 — Privacy Policy — VERIFIED
+
+Step 9 updated only Privacy.
+
+The revised policy is cross-checked against public Android `1.0.0+5` and now accurately covers:
+
+- account/profile data;
+- trip/mileage/form data;
+- local and server storage;
+- Supabase backend use;
+- finalized PDF retention;
+- authorized admin read access;
+- password/authentication handling;
+- exact account-deletion behavior;
+- retained historical records;
+- declared Android location permissions and disabled public Smart Parking state;
+- no continuous location tracking in current public workflows;
+- contacts/camera/microphone posture;
+- advertising/analytics posture;
+- Cloudflare website hosting;
+- security/contact/deletion links.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step9_privacy_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step9_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 8 review before Step 9. Next Development Note remains `v0.002`.
+Publish and verify Step 9 live, then STOP for Randall's review before Step 10. Next Development Note remains `v0.002`.

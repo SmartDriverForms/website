@@ -863,10 +863,75 @@ Verified live:
 - `Driver-first, with room to grow`;
 - production verification passed on Cloudflare check attempt 2.
 
+## Website Modernization Step 9 — Privacy Policy — VERIFIED 2026-10-05
+
+Randall approved the Privacy Policy review/update.
+
+Scope was limited to `privacy.html`. No shared CSS changes were required and the other 10 HTML pages were not changed.
+
+The Privacy Policy was cross-checked against the exact verified public Google Play release source at `853ac80` / Android version `1.0.0+5`.
+
+Key updates:
+
+- effective date updated to October 5, 2026;
+- explicitly identifies current public app version `1.0.0+5`;
+- documents account/profile fields and current trip/mileage/form data categories;
+- documents local account-specific storage and device-wide preferences;
+- identifies Supabase-based backend services for authentication, database storage, synchronization, and protected document storage;
+- explains finalized trip-sheet PDF retention/protected storage;
+- explains ordinary driver-account access controls;
+- discloses controlled read access for authorized Smart Driver Forms administrators to driver profiles, trips, document metadata, and finalized PDFs;
+- clarifies password/account-confirmation/reset behavior;
+- rewrites account-deletion wording to match the deployed backend function:
+  - authentication account removed;
+  - driver profile removed;
+  - registered-device records removed;
+  - account-linked backend support requests removed;
+  - account-specific local directory removed;
+  - retained trip/forms/documents remain;
+  - real email removed from permanent historical owner record and replaced with a non-deliverable deleted-account placeholder;
+  - audit identity/free-form details associated with the deleted account are de-identified;
+- corrects location disclosure:
+  - Android package declares coarse/fine location permissions;
+  - location-assisted Smart Parking suggestion code is bundled;
+  - Smart Parking is disabled in public release mode;
+  - current public Trip Sheet/Mileage Recap workflows do not require continuous location tracking;
+  - Smart Driver Forms does not continuously track physical location in the current public release;
+- states current public workflows do not require contacts/camera/microphone;
+- confirms no current third-party advertising or advertising analytics;
+- identifies Cloudflare-hosted website infrastructure and absence of Smart Driver Forms behavioral-ad tracking on the public website;
+- adds direct Delete Account link and support contact;
+- adds a current meta description.
+
+Verification:
+
+- initial text-check failure was validator-only because bold HTML split the phrase `Account deletion does not`; validator was corrected and rerun;
+- `git diff --check`: PASSED;
+- Step 9 product change limited to `privacy.html`: PASSED;
+- other 10 HTML pages unchanged: PASSED;
+- material policy statements cross-checked against public-release source/migrations: PASSED;
+- Supabase dependency: verified;
+- coarse/fine Android location permissions: verified;
+- Smart Parking disabled in release mode: verified;
+- delete-account backend behavior: verified;
+- admin read policies for profiles/trips/documents/PDFs: verified;
+- one H1 and local links: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step9_privacy_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step9_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 8 review before starting Step 9.
+Publish Step 9 to GitHub/Cloudflare, verify the live Privacy Policy, then STOP for Randall's review before Step 10.
 
-Do not change other page bodies until the next step is approved.
+Do not change Delete Account or other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.
