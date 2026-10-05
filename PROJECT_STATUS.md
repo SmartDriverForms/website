@@ -847,9 +847,25 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step8_screenshots_20261005/`
 
+## Step 8 Production Deployment — VERIFIED 2026-10-05
+
+Step 8 was pushed to GitHub at:
+
+`7b86510 Rebuild About page`
+
+Cloudflare published the new About page successfully.
+
+Verified live:
+
+- `Built around real driver work`;
+- `Trucking paperwork should not be harder than the job requires`;
+- `Useful first. Bigger second.`;
+- `Driver-first, with room to grow`;
+- production verification passed on Cloudflare check attempt 2.
+
 ## Exact Next Action
 
-Publish Step 8 to GitHub/Cloudflare, verify the live About page, then STOP for Randall's review before Step 9.
+STOP for Randall's live Step 8 review before starting Step 9.
 
 Do not change other page bodies until the next step is approved.
 
