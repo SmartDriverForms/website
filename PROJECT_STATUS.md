@@ -1670,8 +1670,15 @@ Verification:
 - `node --check script.js`: PASSED;
 - `git diff --check`: PASSED.
 
+Step 16 live verification:
+
+- commit `27b275f Align phone headers across website` pushed to `origin/main`;
+- Cloudflare deployment verified live against `products.html` and `style.css?v=20261005-16`;
+- repository and `origin/main` were synchronized at verification;
+- Randall reviewed the live result and explicitly approved Step 16 on 2026-10-05.
+
 ## Exact Next Action
 
-Publish Step 16, verify the shared versioned stylesheet live, then have Randall approve the consistent phone header on a non-home page.
+Step 17: review the website navigation/menu across phone, tablet, and desktop. Determine the recommended menu order, wording, and destinations before making any material navigation changes.
 
 The next Development Note remains `v0.002`.
