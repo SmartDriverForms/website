@@ -1856,8 +1856,50 @@ Result:
 
 Step 22 closes as a verified no-change review.
 
+Step 22 checkpoint recovery:
+
+- local commit `d0aec3b Reverify about page identity` was confirmed one commit ahead of `origin/main`;
+- the previously blocked push was retried successfully;
+- Step 22 status is now synchronized to GitHub.
+
+## Website Modernization Step 23 — Secondary Page Consistency Review — VERIFIED 2026-10-05
+
+Randall approved reviewing Pricing, Sign In, and Fleet Portal together.
+
+Review result:
+
+- Pricing correctly states that public driver/fleet pricing has not been announced and does not invent placeholder plans;
+- Sign In correctly states there is no driver or fleet website login yet;
+- drivers are directed to the current Android app;
+- Admin is explicitly identified as authorized Smart Driver Forms administration/support access, not a customer login;
+- Fleet Portal clearly states customer access is planned and not open;
+- no page promises a fleet release date, trial, purchase path, or unpublished pricing;
+- all three pages provide useful paths back to current Products, For Fleets, Support, or Google Play as appropriate.
+
+Routing improvement:
+
+- added `View Fleet Portal Status →` to the fleet card on Sign In;
+- retained the separate `Read About Fleet Plans →` path;
+- this gives a fleet visitor both the direct portal-status answer and the broader fleet-direction explanation without implying that login is available.
+
+Files changed:
+
+- `signin.html`;
+- `PROJECT_STATUS.md`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- shared CSS/JavaScript versions present on all three pages: PASSED;
+- Sign In Fleet Portal status path: PASSED;
+- Sign In For Fleets path retained: PASSED;
+- unavailable-customer-login wording retained: PASSED;
+- Admin customer-login disclaimer retained: PASSED;
+- Pricing no-public-pricing wording retained: PASSED;
+- Fleet Portal planned/not-open wording retained: PASSED.
+
 ## Exact Next Action
 
-Step 23: review the remaining secondary public pages — Pricing, Sign In, and Fleet Portal — as one consistency pass. Confirm they correctly route visitors without implying unavailable customer capabilities.
+Publish Step 23 and verify the new Sign In Fleet Portal status path live. Then proceed to Step 24: review the Privacy Policy and Delete Account pages together for current accuracy and cross-link consistency, without changing verified legal/data-handling wording unless a real mismatch is found.
 
 The next Development Note remains `v0.002`.
