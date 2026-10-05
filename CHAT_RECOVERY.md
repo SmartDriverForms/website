@@ -395,6 +395,34 @@ Verified public For Fleets page:
 - no release date promised;
 - no old `Coming Soon` wording.
 
+## Website Modernization Step 7 — Support Page — VERIFIED
+
+Step 7 rebuilt only Support.
+
+The page now includes:
+
+- Sign-In Problems;
+- Account Confirmation;
+- Forgot Your Password?;
+- Delete Your Account;
+- Smart Driver Trip Sheet help;
+- Smart Mileage Recap help;
+- Finalized Records help;
+- general problem-reporting guidance;
+- `support@smartdriverforms.com`;
+- `Never send your password by email.` warning;
+- a note that fuller Help/Documentation will grow with public releases.
+
+Password-reset and account-deletion guidance was cross-checked against the verified public-release source.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step7_support_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step7_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 6 review before Step 7. Next Development Note remains `v0.002`.
+Publish and verify Step 7 live, then STOP for Randall's review before Step 8. Next Development Note remains `v0.002`.

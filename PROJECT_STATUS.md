@@ -711,10 +711,67 @@ Verified live:
 - old `Coming Soon` wording absent;
 - production verification passed on Cloudflare check attempt 1.
 
+## Website Modernization Step 7 — Support Page — VERIFIED 2026-10-05
+
+Randall approved rebuilding the Support page.
+
+Scope was limited to `support.html`. No shared CSS changes were required and the other 10 HTML pages were not changed.
+
+Support page changes:
+
+- replaced the old mostly-email-only page with a structured help starting point;
+- added Quick Account Help for:
+  - Sign-In Problems;
+  - Account Confirmation;
+  - Forgot Your Password?;
+  - Delete Your Account;
+- verified public-release password-reset wording against Google Play build `1.0.0+5` source:
+  - `Forgot Password?` exists on the sign-in screen;
+  - reset email workflow tells the user to check email and open the reset link;
+- verified public-release in-app Delete Account control exists;
+- added Current Public Tools help for:
+  - Smart Driver Trip Sheet;
+  - Smart Mileage Recap;
+  - Finalized Records;
+  - general problem reporting;
+- preserved and elevated `support@smartdriverforms.com`;
+- added explicit `Never send your password by email.` warning;
+- linked to the existing Delete Account website instructions;
+- added a simple note that fuller documentation/troubleshooting will grow as public features are released;
+- no unreleased module names are marketed.
+
+File changed:
+
+- `support.html`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 7 product change limited to `support.html`: PASSED;
+- other 10 HTML pages unchanged: PASSED;
+- approved support sections present: PASSED;
+- Smart Parking absent: PASSED;
+- Smart Logs & HOS absent: PASSED;
+- Smart Haz-Mat absent: PASSED;
+- public-release Forgot Password flow cross-check: PASSED;
+- public-release Delete Account control cross-check: PASSED;
+- local Support links resolve: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step7_support_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step7_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 6 review before starting Step 7.
+Publish Step 7 to GitHub/Cloudflare, verify the live Support page, then STOP for Randall's review before Step 8.
 
-Do not change Support, About, or other page bodies until the next step is approved.
+Do not change About or other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.
