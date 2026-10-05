@@ -501,10 +501,61 @@ Verified live:
 - Smart Parking absent from Home;
 - deployment verification passed on Cloudflare check attempt 2.
 
+## Website Modernization Step 4 — Products Page — VERIFIED 2026-10-05
+
+Randall approved rebuilding the Products page.
+
+Scope was limited to `products.html` plus shared CSS required for the Products layout. The other 10 HTML pages were not changed.
+
+Products page changes:
+
+- added a clear introduction explaining that the page separates current public tools from development work;
+- added **Available Now / Current public app** section with:
+  - Smart Driver Trip Sheet;
+  - Smart Mileage Recap;
+- added the verified `Get the App on Google Play` CTA;
+- added a clearly separate **In Development** section with:
+  - Smart Trip Data;
+  - Smart Parking;
+  - Smart FMCSA Guide;
+  - Smart GeoTab;
+  - Smart Truck Restrictions & Low Bridges;
+- explicitly states that development tools are not part of the current public Google Play release yet;
+- explicitly states that no release date is being promised;
+- Smart Logs & HOS is not marketed;
+- Smart Haz-Mat is not marketed;
+- development cards use a visually distinct treatment from Available Now cards.
+
+Files changed:
+
+- `products.html`;
+- `style.css`.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- Step 4 product changes limited to `products.html` and `style.css`: PASSED;
+- other 10 HTML pages unchanged: PASSED;
+- Products availability/development claims match the approved feature availability matrix: PASSED;
+- Smart Logs & HOS absent: PASSED;
+- Smart Haz-Mat absent: PASSED;
+- Google Play CTA target: HTTP 200 / Smart Driver Forms listing: PASSED;
+- desktop render: PASSED;
+- 820 px tablet render: PASSED;
+- 390 px phone render: PASSED.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step4_products_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step4_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's live Step 3 review before starting Step 4.
+Publish Step 4 to GitHub/Cloudflare, verify the live Products page, then STOP for Randall's review before Step 5.
 
-Do not change Products or other page bodies until the next step is approved.
+Do not change Drivers, Fleets, Support, About, or other page bodies until the next step is approved.
 
 The next Development Note remains `v0.002`.

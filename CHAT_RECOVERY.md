@@ -280,6 +280,35 @@ Verified public Home page:
 - Smart Driver Trip Sheet and Smart Mileage Recap as current public tools;
 - no Smart Parking marketing on Home.
 
+## Website Modernization Step 4 — Products Page — VERIFIED
+
+Step 4 rebuilt only Products plus supporting CSS.
+
+Available Now:
+
+- Smart Driver Trip Sheet;
+- Smart Mileage Recap.
+
+In Development:
+
+- Smart Trip Data;
+- Smart Parking;
+- Smart FMCSA Guide;
+- Smart GeoTab;
+- Smart Truck Restrictions & Low Bridges.
+
+The page explicitly says development tools are not in the current public Google Play release and that no release date is promised.
+
+Smart Logs & HOS and Smart Haz-Mat are not marketed.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step4_products_validation_20261005.txt`
+
+Screenshots:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step4_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP for Randall's Step 3 review before Step 4. Next Development Note remains `v0.002`.
+Publish and verify Step 4 live, then STOP for Randall's review before Step 5. Next Development Note remains `v0.002`.
