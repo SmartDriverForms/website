@@ -207,6 +207,22 @@ Validation log:
 
 GitHub and Cloudflare now serve the simplified footer without the repeated tagline.
 
+## Website Modernization Step 2 — VERIFIED
+
+Approved navigation cleanup completed:
+
+- top menu: Home / Products / For Drivers / For Fleets / Support / About;
+- Pricing / Plans and Sign In removed from normal navigation;
+- footer Sign In replaced with `Admin` linking to `https://admin.smartdriverforms.com`;
+- Pricing and Sign In pages retained for future use;
+- page-body content unchanged;
+- desktop/phone visual review passed;
+- Admin Portal endpoint returned HTTP 200.
+
+Validation:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step2_navigation_validation_20261005.txt`
+
 ## Exact Next Action
 
-STOP before Step 2 until Randall approves. Next Development Note remains `v0.002`.
+Publish and verify Step 2 live, then STOP for Randall's review before Step 3. Next Development Note remains `v0.002`.

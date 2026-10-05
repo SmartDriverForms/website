@@ -383,8 +383,43 @@ Verified live on `/products`:
 - repeated tagline is absent from the footer;
 - deployment became visible on production check attempt 6.
 
+## Website Modernization Step 2 — Navigation Cleanup — VERIFIED 2026-10-05
+
+Randall approved simplifying the customer-facing navigation and chose to keep Admin access in the footer.
+
+Changed on all 11 HTML pages:
+
+- primary menu is now: Home / Products / For Drivers / For Fleets / Support / About;
+- removed Pricing / Plans from the normal top navigation;
+- removed Sign In from the normal top navigation;
+- removed Sign In from the footer;
+- added footer link `Admin` → `https://admin.smartdriverforms.com`;
+- retained `pricing.html` and `signin.html` in the repository for future use;
+- no page-body `<main>` content was changed.
+
+Verification:
+
+- `git diff --check`: PASSED;
+- all 11 pages use the approved six-link primary menu: PASSED;
+- all 11 pages use Privacy / Delete Account / Support / About / Admin in the footer: PASSED;
+- Pricing and Sign In pages remain present but are absent from normal navigation: PASSED;
+- every page's `<main>` content remains unchanged: PASSED;
+- desktop visual render: PASSED;
+- phone visual render: PASSED;
+- Admin Portal live endpoint: HTTP 200.
+
+Validation log:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step2_navigation_validation_20261005.txt`
+
+Visual review folder:
+
+`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step2_screenshots_20261005/`
+
 ## Exact Next Action
 
-STOP before Step 2. Do not rewrite Home, Products, Pricing, or other page-body content until Randall approves the next step.
+Publish Step 2 to GitHub/Cloudflare, verify the live menu/footer, then STOP for Randall's review before starting Step 3.
+
+Do not rewrite Home, Products, or other page-body content until the next step is approved.
 
 The next Development Note remains `v0.002`.
