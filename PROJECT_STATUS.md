@@ -1081,9 +1081,26 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step11_screenshots_20261005/`
 
+## Step 11 Production Deployment — VERIFIED 2026-10-05
+
+Step 11 was pushed to GitHub at:
+
+`f0c41af Clean up direct-access website pages`
+
+Cloudflare published all three revised direct-access pages successfully.
+
+Verified live:
+
+- Pricing: `Public pricing has not been announced yet`;
+- Sign In: `There is no driver or fleet website login yet`;
+- Sign In: authorized Admin Portal link present;
+- Fleet Portal: `The Fleet Portal is planned and not open for customer use`;
+- stale `Coming Soon` wording absent from all three;
+- production verification passed on Cloudflare check attempt 3.
+
 ## Exact Next Action
 
-Publish Step 11 to GitHub/Cloudflare, verify the live Pricing, Sign In, and Fleet Portal pages, then STOP for Randall's review before Step 12.
+STOP for Randall's live Step 11 review before starting Step 12.
 
 Do not change other page bodies until the next step is approved.
 
