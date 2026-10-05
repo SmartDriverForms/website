@@ -1217,9 +1217,30 @@ Visual review folder:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step13_screenshots_20261005/`
 
+## Step 13 Production Deployment — VERIFIED 2026-10-05
+
+Step 13 was pushed to GitHub at:
+
+`b185cb7 Optimize homepage hero artwork`
+
+Cloudflare published the responsive homepage hero successfully.
+
+Verified live:
+
+- homepage references `assets/smart-driver-forms-hero.webp`;
+- homepage references `assets/smart-driver-forms-hero-mobile.webp`;
+- old `smart-driver-forms-facebook-cover.png` is no longer referenced by the homepage;
+- desktop live WebP SHA-256 exactly matches the locally tested asset:
+  `2eab4988d591f0d41dcb02ded0ea5cd4316ab9bdb85530a69f7584b3925ca2fc`;
+- mobile live WebP SHA-256 exactly matches the locally tested asset:
+  `74f023dba17146bab6b83d89396e4c62a6379e4abb6245be01f55888b4619695`;
+- live desktop asset size: 58,954 bytes;
+- live mobile asset size: 57,036 bytes;
+- production HTML verification passed on Cloudflare check attempt 4.
+
 ## Exact Next Action
 
-Publish Step 13 to GitHub/Cloudflare, verify the live homepage references and serves the optimized WebP assets, then STOP for Randall's review before Step 14.
+STOP for Randall's live Step 13 review before starting Step 14.
 
 Do not begin Step 14 until approved.
 

@@ -633,6 +633,17 @@ Screenshots:
 
 `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/step13_screenshots_20261005/`
 
+## Step 13 Production Deployment — VERIFIED
+
+Step 13 is live on Cloudflare.
+
+Verified:
+
+- live homepage uses the new responsive WebP hero assets;
+- old 1.85 MB banner is no longer referenced by Home;
+- live desktop and mobile image hashes exactly match the locally tested files;
+- live sizes remain about 59 KB and 57 KB respectively.
+
 ## Exact Next Action
 
-Publish and verify Step 13 live, then STOP for Randall's review before Step 14. Next Development Note remains `v0.002`.
+STOP for Randall's Step 13 review before Step 14. Next Development Note remains `v0.002`.
