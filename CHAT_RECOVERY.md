@@ -146,6 +146,18 @@ Major review priorities:
 
 No website product HTML/CSS/JavaScript/asset file was changed during the review.
 
+## Website Feature Availability Matrix — Verified Complete
+
+Canonical matrix:
+
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Driver Forms Website/WEBSITE_FEATURE_AVAILABILITY_MATRIX.md`
+
+Public production source of truth remains Google Play `1.0.0+5` / release checkpoint `853ac80`.
+
+Only Smart Driver Trip Sheet and Smart Mileage Recap are verified active public driver modules in that production build.
+
+Development-only modules must not be promoted to Available Now merely because they are integrated locally. Smart Logs & HOS is explicitly paused and must not be marketed.
+
 ## Exact Next Action
 
-Build the verified public-release availability matrix (public release vs integrated development vs future), then use it to plan the first public website content update. Preserve Development Note continuity; next note is `v0.002`.
+Use the matrix to begin the first website modernization pass: shared header/footer, scalable mobile/tablet navigation, and Home/Products content aligned to the current public release. Verify the exact Google Play listing URL before adding a Get the App CTA. Preserve Development Note continuity; next note is `v0.002`.

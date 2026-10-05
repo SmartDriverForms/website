@@ -243,12 +243,64 @@ Review artifacts:
 - `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/live_site_probe_20261005.txt`;
 - `/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website/review_screenshots_20261005/`.
 
+## Website Feature Availability Matrix — Complete 2026-10-05
+
+Canonical matrix:
+
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Driver Forms Website/WEBSITE_FEATURE_AVAILABILITY_MATRIX.md`
+
+Verified production baseline:
+
+- public Google Play version: `1.0.0+5`;
+- release build checkpoint: `853ac80 Prepare Google Play build 1.0.0+5`;
+- production verification checkpoint: `2378370 Verify Google Play production release`;
+- verified active public driver modules: Smart Driver Trip Sheet and Smart Mileage Recap;
+- Smart Parking is explicitly disabled/Future in release mode;
+- Smart Fuel Log is disabled/future in that release.
+
+The matrix separately records:
+
+- current public-release modules/capabilities;
+- integrated/active development modules that are not public;
+- paused/do-not-market work;
+- internal-only platform surfaces;
+- approved future modules;
+- historical/superseded names;
+- website publishing rules and release-promotion rules.
+
+Important classification decisions:
+
+- Smart Trip Data: development, not public;
+- Smart Parking: active development, not public;
+- Smart FMCSA Guide: integrated development, not public;
+- Smart GeoTab: integrated development, not public;
+- Smart Truck Restrictions & Low Bridges: integrated development, not public;
+- Smart Haz-Mat: standalone V1 functionally complete but not public/integrated release;
+- Smart Logs & HOS: paused/rejected direction — do not market;
+- Smart Fuel Log: historical name superseded by future Smart Fuel & DEF Log;
+- Fleet Portal and Driver web account: future, not active customer products;
+- Admin Portal: internal only.
+
+Validation:
+
+- matrix source file exists and is structurally complete;
+- public `Available Now` claims are limited to verified production capabilities;
+- development-only modules are explicitly marked not public;
+- paused Smart Logs & HOS is explicitly excluded from marketing;
+- `git diff --check`: PASSED.
+
 ## Exact Next Action
 
-Build a verified public-release availability matrix separating:
+Use `WEBSITE_FEATURE_AVAILABILITY_MATRIX.md` as the source of truth for the first website modernization pass.
 
-1. features/modules available in the current public Google Play release;
-2. features/modules complete/integrated in development but not yet publicly released;
-3. future/planned functionality.
+Recommended first implementation scope:
 
-Use that matrix as the source of truth before rewriting Home, Products, Drivers, Fleets, Pricing, or Help content. The next Development Note remains `v0.002`.
+1. standardize the shared header/footer across all pages;
+2. replace the current phone/tablet navigation with a compact responsive menu;
+3. rewrite Home and Products around the verified current public release;
+4. add a Get the App / Google Play CTA only after the exact production listing URL is verified;
+5. remove or reframe stale Smart Parking “Coming Soon” wording;
+6. keep Smart Logs & HOS off the public site while paused;
+7. decide whether an optional clearly labeled `In Development` section belongs on the public site.
+
+The next Development Note remains `v0.002`.
