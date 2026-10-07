@@ -83,3 +83,22 @@ After every completed Development Note:
 5. record the next mechanically incremented version.
 
 Never guess continuity from chat history.
+
+## Verified Sequence — Style C Published Masters (2026-10-07)
+
+- `v0.001` — 2026-10-05
+- `v0.002` — 2026-10-05
+
+Final verified Git checkpoint covered:
+
+`8ef83a0`
+
+Next Development Note version:
+
+`v0.003`
+
+The independent Smart Driver Forms Website Development Note series currently ends at `v0.002` (2026-10-05); historical migration is NOT a new note and does not advance the sequence. The permanent `Individual/` masters contain one Style C DOCX and a matching PDF for each version. `Combined/` holds the complete regenerated DOCX and PDF from the entire verified sequence, and `Originals/` keeps all unchanged legacy source DOCXs and `ORIGINALS_SHA256.txt`.
+
+## Guarded Future Development Note Publication
+
+The last published `Individual/` DOCX and this index are the version authority. Verify the exact prior note, live repository Git state, and covered Git ancestor before drafting the next note. Use `./FINALIZE_DEVELOPMENT_NOTE.sh --prepare /absolute/reviewed_draft.md` to stage the individual DOCX/PDF and both rebuilt combined outputs outside the repository, visually inspect all staged pages, then `--publish /absolute/stage` to publish and update this index. On a verified interrupted publication, use `--recover /absolute/stage`. Never publish synthetic test notes in the real archive, delete original backups, or use the derived combined archive as a version source.

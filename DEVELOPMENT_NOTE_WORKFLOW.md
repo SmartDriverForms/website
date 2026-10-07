@@ -76,3 +76,9 @@ After generating a Development Note:
 5. update `PROJECT_STATUS.md` and `CHAT_RECOVERY.md` when checkpoint or next action changes.
 
 Do not mark a Development Note complete until content and visual output are verified.
+
+## Verified Style C Migration / Future Automation (2026-10-07)
+
+The historical Smart Driver Forms Website sequence has been migrated with originals unchanged under `Originals/`, permanent editable Style C masters and matching PDFs under `Individual/`, and a complete derived DOCX/PDF under `Combined/`. Source originals remain byte-identical (manifest verified). Latest real Development Note: `v0.002`. Next new real note: `v0.003`. Earlier workflow text describing the old root-file layout is historical and superseded only for file location and automatic finalization; product scope and all original document content remain unchanged.
+
+Before a next note, read `PROJECT_STATUS.md`, this workflow, the index, latest `Individual/` DOCX, current Git HEAD/status and relevant commit history. Verify factual covered Git cutoff and create a reviewed Markdown draft. The module-root `FINALIZE_DEVELOPMENT_NOTE.sh` uses shared guarded `--prepare`, `--publish` and `--recover` modes. Prepare creates one new individual Style C DOCX/PDF plus rebuilt complete DOCX/PDF in external staging, without canonical changes. After content and page-level review, publish integrity-checks the outputs, replaces BOTH combined files, and advances the index. Do not skip the explicit review/publication gate or create a synthetic real note.
