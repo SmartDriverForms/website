@@ -2,7 +2,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 MOD="$(basename "$ROOT")"
-NOTES="${SDF_NOTES_ROOT:-$HOME/Smart Driver Forms/06 - Documents/Development Notes}/$MOD"
+NOTES="${SDF_NOTES_ROOT:-$HOME/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes}/$MOD"
 OUTPUT="${SDF_SMART_TEXT_ROOT:-$HOME/Downloads/Smart Text Files}/$MOD"
 TOOL="${SDF_NOTE_AUTOMATION_SCRIPT:-$HOME/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Driver Forms/AUTO_DEVELOPMENT_NOTES.py}"
 PY="${SDF_NOTE_VENV_PYTHON:-$HOME/.local/share/smart-driver-forms/dev-notes-venv/bin/python}"

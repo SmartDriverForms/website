@@ -69,7 +69,7 @@ Public website documented by README:
 
 Repository-specific Development Notes folder:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website`
 
 Independent sequence:
 
@@ -81,7 +81,7 @@ Independent sequence:
 
 Historical website-related notes are stored under:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
 
 They remain historical source records only and do not control this repository's numbering. The version gate searches only the top level of the Website Development Notes folder.
 
@@ -114,7 +114,7 @@ Validation log:
 
 Canonical file:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`
 
 SHA-256:
 

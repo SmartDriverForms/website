@@ -90,7 +90,7 @@ No website product code was changed during the repository move/recovery-system s
 
 Repository-specific Development Notes folder:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website`
 
 This repository now has an independent Development Note sequence beginning at `v0.001`.
 
@@ -104,7 +104,7 @@ Current verified state:
 
 Historical website-related Development Notes are preserved under:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
 
 They are historical source records only and are never used to determine this repository's independent Development Note sequence. The canonical version gate searches only the top level of the Website Development Notes folder.
 
@@ -157,7 +157,7 @@ Validation log:
 
 The three pre-repository-sequence website Development Notes were moved from the shared `Misc` folder into:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
 
 Preserved historical files:
 
@@ -182,7 +182,7 @@ Validation log:
 
 Canonical file:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/2026-10-05 - Smart Driver Forms Website - Development Notes - v0.001.docx`
 
 Verification:
 

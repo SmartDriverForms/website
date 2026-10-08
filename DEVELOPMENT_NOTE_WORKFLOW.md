@@ -8,11 +8,11 @@ This file defines the permanent Development Note workflow for the Smart Driver F
 
 Development Notes are repository-specific. Do not inherit or continue numbering from another repository or from the historical website-related notes stored under:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
 
 ## Development Notes Folder
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website`
 
 ## Historical Source Notes
 

@@ -6,11 +6,11 @@ Updated: 2026-10-05
 
 This file is the authoritative Development Note continuity record for the Smart Driver Forms Website repository.
 
-Do not use another repository's index or the historical website-related notes under `/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes` to determine this repository's sequence.
+Do not use another repository's index or the historical website-related notes under `/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes` to determine this repository's sequence.
 
 ## Development Notes Folder
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website`
 
 ## Current Sequence
 
@@ -44,7 +44,7 @@ Website product baseline before recovery-system setup:
 
 Historical website-related documents are preserved under:
 
-`/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
+`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website/Historical Development Notes`
 
 Historical source files:
 
@@ -61,7 +61,7 @@ The canonical version gate below searches only the top level of the Website Deve
 Before drafting a Development Note, run:
 
 ```bash
-cd "/home/randall/Smart Driver Forms/06 - Documents/Development Notes/Smart Driver Forms Website" && latest="$(find . -maxdepth 1 -type f -name '*Development Notes - v*.docx' -printf '%f\n' | sort -V | tail -1)" && if [ -z "$latest" ]; then echo "Previous Development Note: NONE"; echo "NEW VERSION: v0.001"; else echo "Previous Development Note:"; echo "$latest"; python3 -c 'import re,sys; s=sys.argv[1]; m=re.search(r"v(\d+)\.(\d+)\.docx$",s); assert m,"Version not found"; major=int(m.group(1)); minor=m.group(2); print(f"OLD VERSION: v{major}.{int(minor):0{len(minor)}d}"); print(f"NEW VERSION: v{major}.{int(minor)+1:0{len(minor)}d}")' "$latest"; fi
+cd "/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website" && latest="$(find . -maxdepth 1 -type f -name '*Development Notes - v*.docx' -printf '%f\n' | sort -V | tail -1)" && if [ -z "$latest" ]; then echo "Previous Development Note: NONE"; echo "NEW VERSION: v0.001"; else echo "Previous Development Note:"; echo "$latest"; python3 -c 'import re,sys; s=sys.argv[1]; m=re.search(r"v(\d+)\.(\d+)\.docx$",s); assert m,"Version not found"; major=int(m.group(1)); minor=m.group(2); print(f"OLD VERSION: v{major}.{int(minor):0{len(minor)}d}"); print(f"NEW VERSION: v{major}.{int(minor)+1:0{len(minor)}d}")' "$latest"; fi
 ```
 
 Current required result before drafting the next note:
