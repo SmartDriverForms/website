@@ -2021,3 +2021,9 @@ Exact next action: when real module work merits its next Development Note, verif
 Owner approved moving 12 image originals from root `05 - Brand Assets` into the owning repositories. Started clean Git HEADs: Smart Driver Forms `2e3420a`; Smart Driver Forms Website `bedfdb1`. Verified 12 source files; found one byte-identical existing website asset (`assets/smart-driver-forms-facebook-cover.png`), preserved it unchanged and retained original in historical marketing asset set. Copied and SHA-256 verified eight logos/Google Play assets into Smart Driver Forms `brand_assets/` and four Facebook/YouTube assets into Smart Driver Forms Website `brand_assets/`. Store screenshots are historical; no claim that they represent current app UI. No runtime assets or code changed.
 
 **Exact next action:** commit copies in each repository after staged scope verification, verify clean Git and all hashes; then delete only the 12 source originals and empty `05 - Brand Assets` directories, update recovery notes in both repositories and commit. Next inspect `07 - Testing` read-only for owner review.
+
+## 2026-10-09 — Brand Assets root folder retirement VERIFIED
+
+After commits `406bb6d` (Smart Driver Forms) and `4530fa6` (Smart Driver Forms Website), rechecked both clean Git working trees and all twelve source/destination SHA-256 hashes. Removed only the twelve verified source images and now-empty directories including root `05 - Brand Assets`. Both original destination repositories preserve the historical files. The existing byte-identical website Facebook cover was not modified. No application runtime assets or code changed.
+
+**Exact next action:** commit these recovery updates in both repositories, verify clean Git and missing root folder, then inspect `07 - Testing` read-only and request owner approval before changes.
