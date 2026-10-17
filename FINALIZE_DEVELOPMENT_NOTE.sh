@@ -8,12 +8,12 @@ TOOL="${SDF_NOTE_AUTOMATION_SCRIPT:-/home/sdfdev/Smart Driver Forms/Development 
 PY="${SDF_NOTE_VENV_PYTHON:-/usr/bin/python3}"
 # Fedora's owner-approved private vendor directory is used only for the
 # normal server Notes tool and interpreter; explicit overrides stay intact.
-if [[ "$TOOL" == '""" + str(DEFAULT_TOOL) + """' && "$PY" == '/usr/bin/python3' ]]; then
-  [[ -d '""" + str(VENDOR) + """' && ! -L '""" + str(VENDOR) + """' ]] || {
+if [[ "$TOOL" == '/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Driver Forms/AUTO_DEVELOPMENT_NOTES.py' && "$PY" == '/usr/bin/python3' ]]; then
+  [[ -d '/home/sdfdev/Smart Driver Forms/Project Tools/vendor' && ! -L '/home/sdfdev/Smart Driver Forms/Project Tools/vendor' ]] || {
     echo "ERROR: Approved Fedora Notes Python vendor directory missing."
     exit 69
   }
-  export PYTHONPATH='""" + str(VENDOR) + """'
+  export PYTHONPATH='/home/sdfdev/Smart Driver Forms/Project Tools/vendor'
 fi
 
 if [[ "$#" -ne 2 ]]; then
