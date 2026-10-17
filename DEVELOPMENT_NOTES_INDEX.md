@@ -89,14 +89,15 @@ Never guess continuity from chat history.
 - `v0.001` — 2026-10-05
 - `v0.002` — 2026-10-05
 - `v0.003` — 2026-10-15
+- `v0.004` — 2026-10-17
 
 Final verified Git checkpoint covered:
 
-`a20d623`
+`27b1d2c`
 
 Next Development Note version:
 
-`v0.004`
+`v0.005`
 
 The independent Smart Driver Forms Website Development Note series currently ends at `v0.002` (2026-10-05); historical migration is NOT a new note and does not advance the sequence. The permanent `Individual/` masters contain one Style C DOCX and a matching PDF for each version. `Combined/` holds the complete regenerated DOCX and PDF from the entire verified sequence, and `Originals/` keeps all unchanged legacy source DOCXs and `ORIGINALS_SHA256.txt`.
 
