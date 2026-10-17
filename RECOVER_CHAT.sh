@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-PROJECT_ROOT='/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Driver Forms Website'
-GLOBAL_RULE='/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/GLOBAL_TERMINAL_OUTPUT_RULE.md'
-SMART_TEXT_DIR='/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website'
+PROJECT_ROOT='/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Driver Forms Website'
+GLOBAL_RULE='/home/sdfdev/Smart Driver Forms/Development Workspace/GLOBAL_TERMINAL_OUTPUT_RULE.md'
+SMART_TEXT_DIR='/home/sdfdev/Smart Driver Forms/Project Reports/Smart Text Files/Smart Driver Forms Website'
 
 if ! cd "$PROJECT_ROOT"; then
   echo "ERROR: Cannot enter project root: $PROJECT_ROOT"
