@@ -2,10 +2,20 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 MOD="$(basename "$ROOT")"
-NOTES="${SDF_NOTES_ROOT:-$HOME/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes}/$MOD"
-OUTPUT="${SDF_SMART_TEXT_ROOT:-$HOME/Downloads/Smart Text Files}/$MOD"
-TOOL="${SDF_NOTE_AUTOMATION_SCRIPT:-$HOME/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Driver Forms/AUTO_DEVELOPMENT_NOTES.py}"
-PY="${SDF_NOTE_VENV_PYTHON:-$HOME/.local/share/smart-driver-forms/dev-notes-venv/bin/python}"
+NOTES="${SDF_NOTES_ROOT:-/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Documents/Development Notes}/$MOD"
+OUTPUT="${SDF_SMART_TEXT_ROOT:-/home/sdfdev/Smart Driver Forms/Project Reports/Smart Text Files}/$MOD"
+TOOL="${SDF_NOTE_AUTOMATION_SCRIPT:-/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Driver Forms/AUTO_DEVELOPMENT_NOTES.py}"
+PY="${SDF_NOTE_VENV_PYTHON:-/usr/bin/python3}"
+# Fedora's owner-approved private vendor directory is used only for the
+# normal server Notes tool and interpreter; explicit overrides stay intact.
+if [[ "$TOOL" == '""" + str(DEFAULT_TOOL) + """' && "$PY" == '/usr/bin/python3' ]]; then
+  [[ -d '""" + str(VENDOR) + """' && ! -L '""" + str(VENDOR) + """' ]] || {
+    echo "ERROR: Approved Fedora Notes Python vendor directory missing."
+    exit 69
+  }
+  export PYTHONPATH='""" + str(VENDOR) + """'
+fi
+
 if [[ "$#" -ne 2 ]]; then
   echo "Usage: ./FINALIZE_DEVELOPMENT_NOTE.sh --prepare REVIEWED_DRAFT.md"
   echo "    or ./FINALIZE_DEVELOPMENT_NOTE.sh --publish STAGE_FOLDER"
