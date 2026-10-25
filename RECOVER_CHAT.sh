@@ -79,5 +79,33 @@ echo "$OUT"
 echo
 wc -l "$OUT"
 echo
-echo "Last 40 lines:"
-tail -n 40 "$OUT"
+# Show latest recorded checkpoints from BOTH existing files, not the last
+# lines of DEVELOPMENT_NOTES_INDEX.md. The complete snapshot above is retained.
+# A shortened preview is only a pointer; read the full dated section, applicable
+# module rules and owner decision register before taking any action.
+for recovery_file in CHAT_RECOVERY.md PROJECT_STATUS.md; do
+  if [ ! -f "$recovery_file" ] || [ -L "$recovery_file" ]; then
+    echo "ERROR: Missing or untrusted module checkpoint: $recovery_file"
+    exit 1
+  fi
+  echo "===== LATEST RECORDED SECTION: $recovery_file (verify against decisions and live Git) ====="
+  awk '
+    /^## / { heading = $0; count = 0; next }
+    heading != "" && NF { recent[count % 12] = $0; count++ }
+    END {
+      if (heading == "") {
+        print "ERROR: No dated recovery section found"
+        exit 1
+      }
+      print heading
+      if (count > 12) print "... earlier checkpoint lines preserved in full snapshot ..."
+      start = count > 12 ? count - 12 : 0
+      for (i = start; i < count; i++) print recent[i % 12]
+    }
+  ' "$recovery_file" || exit 1
+done
+echo "===== LIVE GIT STATE (reconcile before acting) ====="
+git branch --show-current || exit 1
+git rev-parse HEAD || exit 1
+git status --short || exit 1
+echo "Full records, module contracts and historical evidence are preserved in: $OUT"
