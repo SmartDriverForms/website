@@ -69,7 +69,7 @@ Public website documented by README:
 
 Repository-specific Development Notes folder:
 
-`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website`
+`/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Documents/Development Notes/Smart Driver Forms Website`
 
 Independent sequence:
 

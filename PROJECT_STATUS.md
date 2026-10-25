@@ -90,7 +90,7 @@ No website product code was changed during the repository move/recovery-system s
 
 Repository-specific Development Notes folder:
 
-`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Documents/Development Notes/Smart Driver Forms Website`
+`/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Documents/Development Notes/Smart Driver Forms Website`
 
 This repository now has an independent Development Note sequence beginning at `v0.001`.
 
