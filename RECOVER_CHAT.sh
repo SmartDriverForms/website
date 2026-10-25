@@ -90,7 +90,7 @@ for recovery_file in CHAT_RECOVERY.md PROJECT_STATUS.md; do
   fi
   echo "===== LATEST RECORDED SECTION: $recovery_file (verify against decisions and live Git) ====="
   awk '
-    /^## / { heading = $0; count = 0; next }
+    /^## [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/ { heading = $0; count = 0; next }
     heading != "" && NF { recent[count % 12] = $0; count++ }
     END {
       if (heading == "") {
@@ -108,4 +108,41 @@ echo "===== LIVE GIT STATE (reconcile before acting) ====="
 git branch --show-current || exit 1
 git rev-parse HEAD || exit 1
 git status --short || exit 1
+# Reconcile BOTH entire latest dated checkpoint sections, not just headings.
+# A conflict is never permission to infer a next action or skip owner approval.
+latest_dated_section() {
+  awk '
+    /^## [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/ {
+      found = 1
+      section = $0 ORS
+      next
+    }
+    found { section = section $0 ORS }
+    END {
+      if (!found) exit 1
+      printf "%s", section
+    }
+  ' "$1"
+}
+status_checkpoint="$(latest_dated_section PROJECT_STATUS.md)" || {
+  echo "RECOVERY_CHECKPOINT_BLOCKED: PROJECT_STATUS.md lacks a readable dated section"
+  exit 1
+}
+chat_checkpoint="$(latest_dated_section CHAT_RECOVERY.md)" || {
+  echo "RECOVERY_CHECKPOINT_BLOCKED: CHAT_RECOVERY.md lacks a readable dated section"
+  exit 1
+}
+if [ "$status_checkpoint" != "$chat_checkpoint" ]; then
+  echo "RECOVERY_CHECKPOINT_CONFLICT: Latest dated sections differ. STOP; reconcile both records and owner decisions."
+  exit 1
+fi
+echo "RECOVERY_CHECKPOINT_SECTIONS_MATCH (this alone does not establish completion)"
+case "$status_checkpoint" in
+  *"Scheduled Development Note"*|*"scheduled note archive"*)
+    echo "RECOVERY_AUTOMATED_NOTE: Inspect preceding substantive checkpoint and open blockers; automated publication is not completion."
+    ;;
+esac
+echo "===== RECENT GIT COMMITS (may be newer than saved checkpoints) ====="
+git --no-pager log -5 --format='%h %ad %s' --date=iso-strict || exit 1
+echo "Reconcile any newer commits, uncommitted changes and active processes before acting."
 echo "Full records, module contracts and historical evidence are preserved in: $OUT"
