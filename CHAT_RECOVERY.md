@@ -4,7 +4,7 @@ Updated: 2026-10-05
 
 ## Canonical Repository
 
-`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/Smart Driver Forms Website`
+`/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Driver Forms Website`
 
 Branch: `main`
 
@@ -16,11 +16,11 @@ Remote:
 
 Mandatory shared rule:
 
-`/home/randall/Smart Driver Forms/02 - Current Projects/Smart Driver Forms App/Development/GLOBAL_TERMINAL_OUTPUT_RULE.md`
+`/home/sdfdev/Smart Driver Forms/Development Workspace/GLOBAL_TERMINAL_OUTPUT_RULE.md`
 
 Assigned terminal-output directory:
 
-`/home/randall/Downloads/Smart Text Files/Smart Driver Forms Website`
+`/home/sdfdev/Smart Driver Forms/Project Reports/Smart Text Files/Smart Driver Forms Website`
 
 Read and follow the shared Global Terminal Output Rule before running terminal commands.
 
