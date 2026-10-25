@@ -140,6 +140,48 @@ echo "RECOVERY_CHECKPOINT_SECTIONS_MATCH (this alone does not establish completi
 case "$status_checkpoint" in
   *"Scheduled Development Note"*|*"scheduled note archive"*)
     echo "RECOVERY_AUTOMATED_NOTE: Inspect preceding substantive checkpoint and open blockers; automated publication is not completion."
+    # A generated note often says only "continue preceding work". Show prior
+    # human/task checkpoints (not a new grant of permission or proof of success).
+    # The full unchanged histories stay in the saved recovery snapshot.
+    python3 -B - PROJECT_STATUS.md <<'PY_RECOVERY_HISTORY' || exit 1
+from pathlib import Path
+import re
+import sys
+
+path = Path(sys.argv[1])
+lines = path.read_text(encoding="utf-8").splitlines()
+headings = [i for i, line in enumerate(lines) if line.startswith("## ")]
+if not headings:
+    raise SystemExit("RECOVERY_HISTORY_BLOCKED: No recorded sections")
+
+excluded = ("scheduled development note", "central scheduled note",
+            "owner-approved step13.2g", "step13.2g",
+            "style c historical development notes migration")
+important = re.compile(
+    r"(?i)(exact next action|next action|blocked|pending|requires? owner|"
+    r"waiting|no further|owner[- ]approved|owner confirmation|"
+    r"acceptance|status:|completed|closed)"
+)
+candidates = []
+for position, start in enumerate(headings):
+    title = lines[start][3:].strip()
+    if any(fragment in title.casefold() for fragment in excluded):
+        continue
+    end = headings[position + 1] if position + 1 < len(headings) else len(lines)
+    candidates.append((start, title, lines[start + 1:end]))
+
+if not candidates:
+    raise SystemExit("RECOVERY_HISTORY_BLOCKED: No earlier nonautomated checkpoints")
+print("===== EARLIER WORK CHECKPOINT POINTERS (HISTORICAL; reverify authority) =====")
+for start, title, content in candidates[-4:]:
+    print(f"RECORDED_HEADING line={start + 1}: {title[:175]}")
+    clues = [line.strip() for line in content
+             if line.strip() and important.search(line)]
+    for line in clues[-2:]:
+        print("  RECORDED_CONTEXT: " + line[:225])
+print("Historical pointers only. Reopen full sections and check current owner "
+      "decisions, live Git, subsequent completions and blockers before any action.")
+PY_RECOVERY_HISTORY
     ;;
 esac
 echo "===== RECENT GIT COMMITS (may be newer than saved checkpoints) ====="
