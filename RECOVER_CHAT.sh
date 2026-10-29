@@ -49,7 +49,7 @@ OUT="$SMART_TEXT_DIR/smart_driver_forms_website_recover_chat_${STAMP}.txt"
 
   echo
   echo "===== REQUIRED RECOVERY FILES ====="
-  for f in CHAT_RECOVERY.md PROJECT_STATUS.md DEVELOPMENT_NOTE_WORKFLOW.md DEVELOPMENT_NOTES_INDEX.md RECOVER_CHAT.sh; do
+  for f in CHAT_RECOVERY.md PROJECT_STATUS.md DEVELOPMENT_NOTE_WORKFLOW.md RECOVER_CHAT.sh; do
     if [ -f "$f" ]; then echo "PRESENT: $f"; else echo "MISSING: $f"; fi
   done
 
@@ -67,8 +67,8 @@ OUT="$SMART_TEXT_DIR/smart_driver_forms_website_recover_chat_${STAMP}.txt"
   cat PROJECT_STATUS.md
 
   echo
-  echo "===== DEVELOPMENT_NOTES_INDEX.md ====="
-  cat DEVELOPMENT_NOTES_INDEX.md
+  echo "===== ====="
+  cat
 
   echo
   echo "===== RECOVERY SNAPSHOT COMPLETE ====="
@@ -80,7 +80,7 @@ echo
 wc -l "$OUT"
 echo
 # Show latest recorded checkpoints from BOTH existing files, not the last
-# lines of DEVELOPMENT_NOTES_INDEX.md. The complete snapshot above is retained.
+# lines of. The complete snapshot above is retained.
 # A shortened preview is only a pointer; read the full dated section, applicable
 # module rules and owner decision register before taking any action.
 for recovery_file in CHAT_RECOVERY.md PROJECT_STATUS.md; do
