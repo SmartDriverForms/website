@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-PROJECT_ROOT='/home/sdfdev/Smart Driver Forms/Development Workspace/Smart Driver Forms Website'
-GLOBAL_RULE='/home/sdfdev/Smart Driver Forms/Development Workspace/GLOBAL_TERMINAL_OUTPUT_RULE.md'
+PROJECT_ROOT='/home/sdfdev/Smart Driver Forms/Development Workspace V2/Standalone Projects/Smart Driver Forms Website'
+GLOBAL_RULE='/home/sdfdev/Smart Driver Forms/Development Workspace V2/Workspace Configuration/GLOBAL_TERMINAL_OUTPUT_RULE.md'
 SMART_TEXT_DIR='/home/sdfdev/Smart Driver Forms/Project Reports/Smart Text Files/Smart Driver Forms Website'
 
 if ! cd "$PROJECT_ROOT"; then
