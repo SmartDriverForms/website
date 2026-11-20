@@ -2090,3 +2090,9 @@ Exact next action: owner sets the website Cloudflare Pages build output director
 Owner set the website Cloudflare Pages build output directory to public and added the Cloudflare security rule "Block internal files on website" (smartdriverforms.com and www: path ending .md or .sh, or /.gitignore -> Block); the internal files returned 403 before the push. Owner said "push": b646bef pushed from the laptop (GitHub main 53e4fcf..b646bef); GitHub check "Cloudflare Pages" completed success. Live: all 11 pages (/, /about, /drivers, /fleets, /products, /pricing, /privacy, /support, /delete-account, /fleet-portal, /signin), style.css, script.js, both hero images and www return 200; internal files 403. Remaining website fixes (each needs owner approval): 404 page, site icon and link previews, robots.txt and sitemap.xml, security headers, Products list refresh, privacy policy before the next Play release.
 
 Exact next action: owner chooses the next website fix.
+
+## 2026-11-20 — Audit fix: security headers (prepared, not yet published)
+
+Owner chose fix B (security headers). public/_headers adds Content-Security-Policy (self only; no outside scripts, fonts or forms exist; links to Google Play and the Admin Portal are ordinary links and unaffected), X-Frame-Options DENY, nosniff, strict-origin-when-cross-origin referrer, Permissions-Policy and HSTS. No noindex (public site). Checked: no inline scripts, styles or handlers in any page; script.js only changes classes, the hero image src (same site) and text.
+
+Exact next action: owner says "push"; then push from the laptop and check the headers and every page live.
