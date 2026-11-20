@@ -2114,3 +2114,9 @@ Exact next action: owner says "push"; then push from the laptop and check a miss
 Owner said "push": 4408e2f pushed from the laptop (591e868..4408e2f); Cloudflare Pages check success. Live: missing addresses (including nested) return 404 with the new page; favicon.ico, favicon-32, apple-touch-icon, share image, robots.txt and sitemap.xml 200; preview tags on pages; pages 200; internal files 403; headers present.
 
 Exact next action: C, Products list refresh: draft from the current modules for the owner's approval.
+
+## 2026-11-20 — Fix C prepared: Products list refreshed (not yet published)
+
+Owner approved the draft list with changes: "Do not include Standalone Apps" (Smart Document Scanner removed) and kept all three sections ("A": Available now, In testing, Planned). public/products.html: Available now unchanged (Smart Driver Trip Sheet, Smart Mileage Recap; Google Play 1.0.0+5); In testing (13): Smart Trip Data, Smart Fuel & DEF Log, Smart Parking, Smart Weather, Smart Truck Restrictions & Low Bridges, Smart Chain Laws, Smart Logs & HOS, Smart ELD Help (replaces Smart GeoTab), Smart FMCSA Guide, Smart Haz-Mat, Smart POD & Detention, Smart Claims & Accidents, Smart Permit Book; Planned (6): Smart Truck Care, Smart Income & Expense, Smart Driver Tax Organizer, Smart Load Closeout, Smart Load Document Vault, Smart Settlement Audit. Left off: Smart Hotels, Smart IFTA, Smart Driver Expense Log, standalone apps. The one-line descriptions for Tax Organizer, Load Closeout, Load Document Vault and Settlement Audit were written for this page and shown to the owner before publishing. Checks: tags balanced; no GeoTab mention left; git diff --check PASS.
+
+Exact next action: owner reviews the four new one-liners and says "push".
