@@ -905,3 +905,9 @@ Exact next action: owner opens smartdriverforms.com once (menu on a phone-sized 
 Owner: "I approve everything" (A privacy policy, C Products refresh, D 404 page, E site icon and link previews, F robots.txt and sitemap; order D+E+F, then C, then A). Changes in public/: 404.html (same layout; links to Home, Products, Support; noindex; absolute /style.css and /script.js so it works at any depth); favicon.ico (16/32/48 from the SDF logo), assets/favicon-32.png, assets/apple-touch-icon.png (180, white background); assets/smart-driver-forms-share.jpg (1200x630, the whole Facebook cover fitted on matching #06021C background); icon and Open Graph / Twitter card tags added to all 11 pages (title and description from each page); robots.txt (allow all, sitemap link); sitemap.xml (11 clean page URLs). Checks: every HTML file tag-balanced; sitemap XML parses; all new files served locally 200; git diff --check PASS.
 
 Exact next action: owner says "push"; then push from the laptop and check a missing address shows the 404 page, the icon, robots.txt, sitemap.xml and the preview tags live.
+
+## 2026-11-20 — Fixes D, E, F published (PASS)
+
+Owner said "push": 4408e2f pushed from the laptop (591e868..4408e2f); Cloudflare Pages check success. Live: missing addresses (including nested) return 404 with the new page; favicon.ico, favicon-32, apple-touch-icon, share image, robots.txt and sitemap.xml 200; preview tags on pages; pages 200; internal files 403; headers present.
+
+Exact next action: C, Products list refresh: draft from the current modules for the owner's approval.
