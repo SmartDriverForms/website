@@ -2078,3 +2078,9 @@ Owner explicitly approved migration of Smart Driver Forms Website into Developme
 
 ## 2026-10-29 — Owner acceptance of Website V2 migration
 Owner explicitly responded “accepted” following verified V2 standalone migration. Migration COMPLETED / ACCEPTED. Original website and production hosting, protected Git, live links and deployment unchanged. Browser/production testing not performed. Next: Smart Parking Archive read-only audit; migration separately owner-gated.
+
+## 2026-11-20 — Audit fix: publish only public/ (prepared, not yet published)
+
+Owner approved fixing the internal-files exposure the same way as the Admin Portal ("fix"). All website files (11 pages, script.js, style.css, assets/) moved into public/; project records, README, review and matrix files, RECOVER_CHAT.sh and brand_assets/ (not used by any page) stay outside it. Checks: every page and both used images served 200 from public/ on a local server; node --check script.js PASS; git diff --check PASS. GitHub SmartDriverForms/website master 53e4fcf is an ancestor of this branch; only records and brand_assets changed since, so the live pages equal the repository. Live site before the change serves PROJECT_STATUS.md, CHAT_RECOVERY.md, RECOVER_CHAT.sh, README.md, WEBSITE_REVIEW_2026-10-05.md, WEBSITE_FEATURE_AVAILABILITY_MATRIX.md, DEVELOPMENT_NOTES_INDEX.md and DEVELOPMENT_NOTE_WORKFLOW.md.
+
+Exact next action: owner sets the website Cloudflare Pages build output directory to public; then push from the laptop (owner confirms) and add a Cloudflare security rule blocking .md and .sh files on smartdriverforms.com for the cached copies.
