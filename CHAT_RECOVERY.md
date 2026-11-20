@@ -893,3 +893,9 @@ Exact next action: owner chooses the next website fix.
 Owner chose fix B (security headers). public/_headers adds Content-Security-Policy (self only; no outside scripts, fonts or forms exist; links to Google Play and the Admin Portal are ordinary links and unaffected), X-Frame-Options DENY, nosniff, strict-origin-when-cross-origin referrer, Permissions-Policy and HSTS. No noindex (public site). Checked: no inline scripts, styles or handlers in any page; script.js only changes classes, the hero image src (same site) and text.
 
 Exact next action: owner says "push"; then push from the laptop and check the headers and every page live.
+
+## 2026-11-20 — Security headers published (PASS); owner browser look pending
+
+Owner said "push": 591e868 pushed from the laptop (b646bef..591e868); Cloudflare Pages check success. Live: all six headers present on smartdriverforms.com; all 15 checked pages and files 200; internal files 403.
+
+Exact next action: owner opens smartdriverforms.com once (menu on a phone-sized window, hero image) to confirm nothing looks broken; then the next website fix (privacy policy recommended before the next Play release).
