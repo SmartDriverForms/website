@@ -2102,3 +2102,9 @@ Exact next action: owner says "push"; then push from the laptop and check the he
 Owner said "push": 591e868 pushed from the laptop (b646bef..591e868); Cloudflare Pages check success. Live: all six headers present on smartdriverforms.com; all 15 checked pages and files 200; internal files 403.
 
 Exact next action: owner opens smartdriverforms.com once (menu on a phone-sized window, hero image) to confirm nothing looks broken; then the next website fix (privacy policy recommended before the next Play release).
+
+## 2026-11-20 — Audit fixes D, E, F prepared: 404 page, site icon and link previews, robots.txt and sitemap (not yet published)
+
+Owner: "I approve everything" (A privacy policy, C Products refresh, D 404 page, E site icon and link previews, F robots.txt and sitemap; order D+E+F, then C, then A). Changes in public/: 404.html (same layout; links to Home, Products, Support; noindex; absolute /style.css and /script.js so it works at any depth); favicon.ico (16/32/48 from the SDF logo), assets/favicon-32.png, assets/apple-touch-icon.png (180, white background); assets/smart-driver-forms-share.jpg (1200x630, the whole Facebook cover fitted on matching #06021C background); icon and Open Graph / Twitter card tags added to all 11 pages (title and description from each page); robots.txt (allow all, sitemap link); sitemap.xml (11 clean page URLs). Checks: every HTML file tag-balanced; sitemap XML parses; all new files served locally 200; git diff --check PASS.
+
+Exact next action: owner says "push"; then push from the laptop and check a missing address shows the 404 page, the icon, robots.txt, sitemap.xml and the preview tags live.
